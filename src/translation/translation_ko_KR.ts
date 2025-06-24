@@ -2382,6 +2382,11 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation>오디오 경고</translation>
     </message>
     <message>
+        <location filename="../clientsettingsdlgbase.ui" line="348"/>
+        <source>Enable P2P Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../clientsettingsdlgbase.ui" line="366"/>
         <source>Audio/Network Setup</source>
         <translation>오디오/네트워크 설정</translation>

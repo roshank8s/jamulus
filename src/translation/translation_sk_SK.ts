@@ -2318,6 +2318,11 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation>Zvukové upozornenia</translation>
     </message>
     <message>
+        <location filename="../clientsettingsdlgbase.ui" line="348"/>
+        <source>Enable P2P Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../clientsettingsdlgbase.ui" line="366"/>
         <source>Audio/Network Setup</source>
         <translation>Nastavenie zvuku/siete</translation>

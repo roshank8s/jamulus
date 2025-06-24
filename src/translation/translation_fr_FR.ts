@@ -2382,6 +2382,11 @@ Nous avons coupé votre canal et activé &quot;Me silencer&quot;. Veuillez d&apo
         <translation>Alertes audio</translation>
     </message>
     <message>
+        <location filename="../clientsettingsdlgbase.ui" line="348"/>
+        <source>Enable P2P Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../clientsettingsdlgbase.ui" line="366"/>
         <source>Audio/Network Setup</source>
         <translation>Configuration audio/réseau</translation>

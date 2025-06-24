@@ -2760,6 +2760,11 @@ Silenciamos seu canal e ativamos &apos;Silenciar-me&apos;. Resolva o problema de
         <translation>Alertas de Áudio</translation>
     </message>
     <message>
+        <location filename="../clientsettingsdlgbase.ui" line="348"/>
+        <source>Enable P2P Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../clientsettingsdlgbase.ui" line="366"/>
         <source>Audio/Network Setup</source>
         <translation>Configuração de Áudio/Rede</translation>

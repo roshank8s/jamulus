@@ -2770,6 +2770,11 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation>Alertas Sonoras</translation>
     </message>
     <message>
+        <location filename="../clientsettingsdlgbase.ui" line="348"/>
+        <source>Enable P2P Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../clientsettingsdlgbase.ui" line="366"/>
         <source>Audio/Network Setup</source>
         <translation>Configuración Audio/Red</translation>

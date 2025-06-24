@@ -2731,6 +2731,11 @@ E&apos; stato disattivato l&apos;audio del tuo canale ed inserito il &quot;Disat
         <translation>Avvisi Audio</translation>
     </message>
     <message>
+        <location filename="../clientsettingsdlgbase.ui" line="348"/>
+        <source>Enable P2P Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../clientsettingsdlgbase.ui" line="366"/>
         <source>Audio/Network Setup</source>
         <translation>Impostazioni Audio/Rete</translation>

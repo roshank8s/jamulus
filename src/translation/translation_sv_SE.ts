@@ -2433,6 +2433,11 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation>Ljudvarningar</translation>
     </message>
     <message>
+        <location filename="../clientsettingsdlgbase.ui" line="348"/>
+        <source>Enable P2P Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../clientsettingsdlgbase.ui" line="366"/>
         <source>Audio/Network Setup</source>
         <translation>Ljud och nätverksinställningar</translation>
