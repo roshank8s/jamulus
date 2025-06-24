@@ -821,7 +821,7 @@ int main ( int argc, char** argv )
     bIsClient = true; // Client only - TODO: maybe a switch in interface to change to server?
 
     // bUseMultithreading = true;
-    QApplication* pApp       = new QApplication ( argc, argv );
+    QApplication* pApp = new QApplication ( argc, argv );
 #    else
     QCoreApplication* pApp = bUseGUI ? new QApplication ( argc, argv ) : new QCoreApplication ( argc, argv );
 #    endif
@@ -865,10 +865,10 @@ int main ( int argc, char** argv )
     Q_INIT_RESOURCE ( resources );
 
 #ifndef SERVER_ONLY
-    //### TEST: BEGIN ###//
-    // activate the following line to activate the test bench,
-    // CTestbench Testbench ( "127.0.0.1", DEFAULT_PORT_NUMBER );
-    //### TEST: END ###//
+    // ### TEST: BEGIN ###//
+    //  activate the following line to activate the test bench,
+    //  CTestbench Testbench ( "127.0.0.1", DEFAULT_PORT_NUMBER );
+    // ### TEST: END ###//
 #endif
 
 #ifdef NO_JSON_RPC
@@ -877,7 +877,7 @@ int main ( int argc, char** argv )
         qWarning() << "No JSON-RPC support in this build.";
     }
 #else
-    CRpcServer*   pRpcServer = nullptr;
+    CRpcServer* pRpcServer = nullptr;
 
     if ( iJsonRpcPortNumber != INVALID_PORT )
     {
@@ -933,6 +933,7 @@ int main ( int argc, char** argv )
 
             // load settings from init-file (command line options override)
             CClientSettings Settings ( &Client, strIniFileName );
+            Client.SetSettingsPointer ( &Settings );
             Settings.Load ( CommandLineOptions );
 
 #    ifndef NO_JSON_RPC

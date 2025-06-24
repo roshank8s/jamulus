@@ -23,6 +23,7 @@
 \******************************************************************************/
 
 #include "client.h"
+#include "settings.h"
 
 /* Implementation *************************************************************/
 CClient::CClient ( const quint16  iPortNumber,
@@ -68,7 +69,8 @@ CClient::CClient ( const quint16  iPortNumber,
     bEnableIPv6 ( bNEnableIPv6 ),
     bMuteMeInPersonalMix ( bNMuteMeInPersonalMix ),
     iServerSockBufNumFrames ( DEF_NET_BUF_SIZE_NUM_BL ),
-    pSignalHandler ( CSignalHandler::getSingletonP() )
+    pSignalHandler ( CSignalHandler::getSingletonP() ),
+    pSettings ( nullptr )
 {
     int iOpusError;
 
@@ -231,7 +233,13 @@ void CClient::OnSendCLProtMessage ( CHostAddress InetAddr, CVector<uint8_t> vecM
     Socket.SendPacket ( vecMessage, InetAddr );
 }
 
-void CClient::OnPeerAudioReceived ( const CVector<uint8_t>& data ) { Channel.PutAudioData ( data, data.Size(), Channel.GetAddress() ); }
+void CClient::OnPeerAudioReceived ( const CVector<uint8_t>& data )
+{
+    if ( pSettings && pSettings->bUseP2PMode )
+    {
+        Channel.PutAudioData ( data, data.Size(), Channel.GetAddress() );
+    }
+}
 
 void CClient::OnInvalidPacketReceived ( CHostAddress RecHostAddr )
 {
@@ -1388,8 +1396,11 @@ void CClient::ProcessAudioDataIntern ( CVector<int16_t>& vecsStereoSndCrd )
         // send coded audio through the network
         Channel.PrepAndSendPacket ( &Socket, vecCeltData, iCeltNumCodedBytes );
 
-        // forward packet to peers if any
-        P2PManager.SendAudioToPeers ( vecCeltData );
+        // forward packet to peers if enabled
+        if ( pSettings && pSettings->bUseP2PMode )
+        {
+            P2PManager.SendAudioToPeers ( vecCeltData );
+        }
     }
 
     // Receive signal ----------------------------------------------------------

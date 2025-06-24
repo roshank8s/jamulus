@@ -43,6 +43,8 @@
 #include "peertopeer/p2pmanager.h"
 #include "signalhandler.h"
 
+class CClientSettings;
+
 #if defined( _WIN32 ) && !defined( JACK_ON_WINDOWS )
 #    include "sound/asio/sound.h"
 #else
@@ -221,6 +223,7 @@ public:
 
     void SetEnableOPUS64 ( const bool eNEnableOPUS64 );
     bool GetEnableOPUS64() { return bEnableOPUS64; }
+    void SetSettingsPointer ( CClientSettings* pNewSettings ) { pSettings = pNewSettings; }
 
     int GetSndCrdActualMonoBlSize()
     {
@@ -408,7 +411,8 @@ protected:
 
     CSignalHandler* pSignalHandler;
 
-    CP2PManager P2PManager;
+    CP2PManager      P2PManager;
+    CClientSettings* pSettings;
 
 protected slots:
     void OnHandledSignal ( int sigNum );
