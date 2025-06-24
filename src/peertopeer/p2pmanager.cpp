@@ -17,12 +17,14 @@ void CP2PManager::AddPeer ( const QHostAddress& addr, quint16 port )
                       this,
                       &CP2PManager::PeerAudioReceived );
     Peers.append ( peer );
+    qInfo() << qUtf8Printable ( QString ( "> Added peer %1:%2" ).arg ( addr.toString() ).arg ( port ) );
 }
 
 void CP2PManager::RemovePeers()
 {
     qDeleteAll ( Peers );
     Peers.clear();
+    qInfo() << "> Removed all peers";
 }
 
 void CP2PManager::SendAudioToPeers ( const CVector<uint8_t>& data )
