@@ -2742,6 +2742,11 @@ Wir haben Deinen Kanal stummgeschaltet und die Funktion &apos;Stummschalten&apos
         <translation>Audiohinweise</translation>
     </message>
     <message>
+        <location filename="../clientsettingsdlgbase.ui" line="348"/>
+        <source>Enable P2P Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../clientsettingsdlgbase.ui" line="366"/>
         <source>Audio/Network Setup</source>
         <translation>Audio-/Netzwerk-Einstellungen</translation>

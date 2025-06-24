@@ -2718,6 +2718,11 @@ O seu canal foi silenciado e foi activada a função &apos;Silenciar-me&apos;. P
         <translation>Alertas de Áudio</translation>
     </message>
     <message>
+        <location filename="../clientsettingsdlgbase.ui" line="348"/>
+        <source>Enable P2P Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../clientsettingsdlgbase.ui" line="366"/>
         <source>Audio/Network Setup</source>
         <translation>Configuração Audio/Rede</translation>

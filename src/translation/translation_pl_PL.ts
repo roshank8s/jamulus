@@ -2422,6 +2422,11 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation>Alarmy dźwiękowe</translation>
     </message>
     <message>
+        <location filename="../clientsettingsdlgbase.ui" line="348"/>
+        <source>Enable P2P Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../clientsettingsdlgbase.ui" line="366"/>
         <source>Audio/Network Setup</source>
         <translation>Ustawienia dźwięku/sieci</translation>
