@@ -28,7 +28,9 @@ void CPeerConnection::OnReadyRead()
         const qint64 len = Socket.readDatagram ( reinterpret_cast<char*> ( &RecvBuffer[0] ), MAX_SIZE_BYTES_NETW_BUF );
         if ( len > 0 )
         {
-            emit AudioPacketReceived ( RecvBuffer );
+            CVector<uint8_t> data ( static_cast<int> ( len ) );
+            std::copy_n ( RecvBuffer.begin(), len, data.begin() );
+            emit AudioPacketReceived ( data );
         }
     }
 }
