@@ -337,11 +337,20 @@ void CClient::OnCLConnClientsListMesReceived ( CHostAddress inetAddr, CVector<CC
             // avoid adding ourselves as a peer
             if ( chanInfo.iChanID != clientChannels[0].iServerChannelID )
             {
-                P2PManager.AddPeer ( inetAddr.InetAddr, inetAddr.iPort );
-                auto* ps = new PeerStream ( CHostAddress ( inetAddr.InetAddr, inetAddr.iPort ) );
-                ps->JitterBuffer.SetUseDoubleSystemFrameSize ( Channel.GetAudioCompressionType() == CT_OPUS );
-                ps->JitterBuffer.Init ( Channel.GetCeltNumCodedBytes(), Channel.GetSockBufNumFrames(), false );
-                PeerStreams.append ( ps );
+                const CHostAddress& peerAddr = chanInfo.HostAddr;
+
+                const bool bExists = std::any_of ( PeerStreams.begin(), PeerStreams.end(), [&peerAddr] ( const PeerStream* ps ) {
+                    return ps->Address == peerAddr;
+                } );
+
+                if ( !bExists )
+                {
+                    P2PManager.AddPeer ( peerAddr.InetAddr, peerAddr.iPort );
+                    auto* ps = new PeerStream ( peerAddr );
+                    ps->JitterBuffer.SetUseDoubleSystemFrameSize ( Channel.GetAudioCompressionType() == CT_OPUS );
+                    ps->JitterBuffer.Init ( Channel.GetCeltNumCodedBytes(), Channel.GetSockBufNumFrames(), false );
+                    PeerStreams.append ( ps );
+                }
             }
         }
     }

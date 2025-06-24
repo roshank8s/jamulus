@@ -1193,7 +1193,8 @@ CVector<CChannelInfo> CServer::CreateChannelList()
         if ( vecChannels[i].IsConnected() )
         {
             vecChanInfo.Add ( CChannelInfo ( i, // ID
-                                             vecChannels[i].GetChanInfo() ) );
+                                             vecChannels[i].GetChanInfo(),
+                                             vecChannels[i].GetAddress() ) );
         }
     }
 
