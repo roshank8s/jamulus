@@ -343,12 +343,19 @@
              </spacer>
             </item>
             <item>
-             <widget class="QCheckBox" name="chbP2PMode">
-              <property name="text">
-               <string>Enable P2P Mode</string>
-              </property>
-             </widget>
-            </item>
+            <widget class="QCheckBox" name="chbP2PMode">
+             <property name="text">
+              <string>Enable P2P Mode</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="chbPureP2PMode">
+             <property name="text">
+              <string>Pure P2P Mode</string>
+             </property>
+            </widget>
+           </item>
            </layout>
           </item>
           <item>
@@ -1386,6 +1393,7 @@
   <tabstop>cbxInputBoost</tabstop>
   <tabstop>chbDetectFeedback</tabstop>
   <tabstop>chbP2PMode</tabstop>
+  <tabstop>chbPureP2PMode</tabstop>
   <tabstop>sldAudioPan</tabstop>
  </tabstops>
  <resources>

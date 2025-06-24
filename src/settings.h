@@ -153,6 +153,7 @@ public:
         bEnableFeedbackDetection ( true ),
         bEnableAudioAlerts ( false ),
         bUseP2PMode ( false ),
+        bPureP2PMode ( false ),
         vecWindowPosSettings(), // empty array
         vecWindowPosChat(),     // empty array
         vecWindowPosConnect(),  // empty array
@@ -188,6 +189,7 @@ public:
     bool             bEnableFeedbackDetection;
     bool             bEnableAudioAlerts;
     bool             bUseP2PMode;
+    bool             bPureP2PMode;
 
     // window position/state settings
     QByteArray vecWindowPosSettings;

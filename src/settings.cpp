@@ -294,6 +294,10 @@ void CClientSettings::ReadSettingsFromXML ( const QDomDocument& IniXMLDocument, 
     {
         bUseP2PMode = bValue;
     }
+    if ( GetFlagIniSet ( IniXMLDocument, "client", "purep2p", bValue ) )
+    {
+        bPureP2PMode = bValue;
+    }
 
     // name
     pClient->ChannelInfo.strName = FromBase64ToString (
@@ -660,6 +664,7 @@ void CClientSettings::WriteSettingsToXML ( QDomDocument& IniXMLDocument, bool is
 
     // P2P mode
     SetFlagIniSet ( IniXMLDocument, "client", "usep2p", bUseP2PMode );
+    SetFlagIniSet ( IniXMLDocument, "client", "purep2p", bPureP2PMode );
 
     // name
     PutIniSetting ( IniXMLDocument, "client", "name_base64", ToBase64 ( pClient->ChannelInfo.strName ) );

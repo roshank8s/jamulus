@@ -26,6 +26,7 @@
 #include "settings.h"
 #include "peertopeer/peerstream.h"
 #include <cmath>
+#include <algorithm>
 
 /* Implementation *************************************************************/
 CClient::CClient ( const quint16  iPortNumber,
@@ -1421,6 +1422,14 @@ void CClient::ProcessAudioDataIntern ( CVector<int16_t>& vecsStereoSndCrd )
         vecSelfMonitorBuf = vecsStereoSndCrd;
     }
 
+    const bool bPureP2PActive = pSettings && pSettings->bUseP2PMode && pSettings->bPureP2PMode &&
+                                ( PeerStreams.size() >= std::max(0, iActiveChannels - 1) );
+
+    if ( bPureP2PActive )
+    {
+        bIsInitializationPhase = false;
+    }
+
     for ( i = 0, j = 0; i < iSndCrdFrameSizeFactor; i++, j += iNumAudioChannels * iOPUSFrameSizeSamples )
     {
         // OPUS encoding
@@ -1436,8 +1445,11 @@ void CClient::ProcessAudioDataIntern ( CVector<int16_t>& vecsStereoSndCrd )
             }
         }
 
-        // send coded audio through the network
-        Channel.PrepAndSendPacket ( &Socket, vecCeltData, iCeltNumCodedBytes );
+        // send coded audio through the network if not in pure P2P mode
+        if ( !bPureP2PActive )
+        {
+            Channel.PrepAndSendPacket ( &Socket, vecCeltData, iCeltNumCodedBytes );
+        }
 
         // forward packet to peers if enabled
         if ( pSettings && pSettings->bUseP2PMode )
@@ -1455,8 +1467,9 @@ void CClient::ProcessAudioDataIntern ( CVector<int16_t>& vecsStereoSndCrd )
 
     for ( i = 0, j = 0; i < iSndCrdFrameSizeFactor; i++, j += iNumAudioChannels * iOPUSFrameSizeSamples )
     {
-        // receive a new block
-        const bool bReceiveDataOk = ( Channel.GetData ( vecbyNetwData, iCeltNumCodedBytes ) == GS_BUFFER_OK );
+        // receive a new block if not in pure P2P mode
+        const bool bReceiveDataOk = !bPureP2PActive &&
+                                    ( Channel.GetData ( vecbyNetwData, iCeltNumCodedBytes ) == GS_BUFFER_OK );
 
         // get pointer to coded data and manage the flags
         if ( bReceiveDataOk )
@@ -1493,9 +1506,19 @@ void CClient::ProcessAudioDataIntern ( CVector<int16_t>& vecsStereoSndCrd )
 
     if ( pSettings && pSettings->bUseP2PMode )
     {
-        for ( i = 0; i < iStereoBlockSizeSam; i++ )
+        if ( bPureP2PActive )
         {
-            vecfMixBuffer[i] = vecsStereoSndCrd[i];
+            for ( i = 0; i < iStereoBlockSizeSam; i++ )
+            {
+                vecfMixBuffer[i] = 0.0f;
+            }
+        }
+        else
+        {
+            for ( i = 0; i < iStereoBlockSizeSam; i++ )
+            {
+                vecfMixBuffer[i] = vecsStereoSndCrd[i];
+            }
         }
 
         for ( auto* stream : PeerStreams )
