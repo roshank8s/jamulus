@@ -1139,6 +1139,7 @@ void CProtocol::CreateConClientListMes ( const CVector<CChannelInfo>& vecChanInf
                                     4 +                      // instrument
                                     1 +                      // skill level
                                     4 +                      // IP address
+                                    2 +                      // port
                                     2 + strUTF8Name.size() + // utf-8 str. size / str.
                                     2 + strUTF8City.size();  // utf-8 str. size / str.
 
@@ -1157,8 +1158,14 @@ void CProtocol::CreateConClientListMes ( const CVector<CChannelInfo>& vecChanInf
         // skill level (1 byte)
         PutValOnStream ( vecData, iPos, static_cast<uint32_t> ( vecChanInfo[i].eSkillLevel ), 1 );
 
-        // used to be IP address before #316 (4 bytes)
-        PutValOnStream ( vecData, iPos, 0, 4 );
+        // IP address (4 bytes)
+        PutValOnStream ( vecData,
+                         iPos,
+                         static_cast<uint32_t> ( vecChanInfo[i].HostAddr.InetAddr.toIPv4Address() ),
+                         4 );
+
+        // port number (2 bytes)
+        PutValOnStream ( vecData, iPos, static_cast<uint32_t> ( vecChanInfo[i].HostAddr.iPort ), 2 );
 
         // name
         PutStringUTF8OnStream ( vecData, iPos, strUTF8Name );
@@ -1214,7 +1221,13 @@ bool CProtocol::EvaluateConClientListMes ( const CVector<uint8_t>& vecData )
         }
 
         // add channel information to vector
-        vecChanInfo.Add ( CChannelInfo ( iChanID, strCurName, eCountry, strCurCity, iInstrument, eSkillLevel ) );
+        vecChanInfo.Add ( CChannelInfo ( iChanID,
+                                         strCurName,
+                                         eCountry,
+                                         strCurCity,
+                                         iInstrument,
+                                         eSkillLevel,
+                                         CHostAddress() ) );
     }
 
     // check size: all data is read, the position must now be at the end
@@ -2383,6 +2396,7 @@ void CProtocol::CreateCLConnClientsListMes ( const CHostAddress& InetAddr, const
                                     4 +                      // instrument
                                     1 +                      // skill level
                                     4 +                      // IP address
+                                    2 +                      // port
                                     2 + strUTF8Name.size() + // utf-8 str. size / str.
                                     2 + strUTF8City.size();  // utf-8 str. size / str.
 
@@ -2401,8 +2415,14 @@ void CProtocol::CreateCLConnClientsListMes ( const CHostAddress& InetAddr, const
         // skill level (1 byte)
         PutValOnStream ( vecData, iPos, static_cast<uint32_t> ( vecChanInfo[i].eSkillLevel ), 1 );
 
-        // used to be IP address before #316 (4 bytes)
-        PutValOnStream ( vecData, iPos, 0, 4 );
+        // IP address (4 bytes)
+        PutValOnStream ( vecData,
+                         iPos,
+                         static_cast<uint32_t> ( vecChanInfo[i].HostAddr.InetAddr.toIPv4Address() ),
+                         4 );
+
+        // port number (2 bytes)
+        PutValOnStream ( vecData, iPos, static_cast<uint32_t> ( vecChanInfo[i].HostAddr.iPort ), 2 );
 
         // name
         PutStringUTF8OnStream ( vecData, iPos, strUTF8Name );
@@ -2422,8 +2442,8 @@ bool CProtocol::EvaluateCLConnClientsListMes ( const CHostAddress& InetAddr, con
 
     while ( iPos < iDataLen )
     {
-        // check size (the next 12 bytes)
-        if ( ( iDataLen - iPos ) < 12 )
+        // check size (the next 14 bytes)
+        if ( ( iDataLen - iPos ) < 14 )
         {
             return true; // return error code
         }
@@ -2440,8 +2460,11 @@ bool CProtocol::EvaluateCLConnClientsListMes ( const CHostAddress& InetAddr, con
         // skill level (1 byte)
         const ESkillLevel eSkillLevel = static_cast<ESkillLevel> ( GetValFromStream ( vecData, iPos, 1 ) );
 
-        // used to be IP address, zero since #316 (4 bytes)
-        iPos += 4;
+        // IP address (4 bytes)
+        const quint32 PeerAddr = static_cast<quint32> ( GetValFromStream ( vecData, iPos, 4 ) );
+
+        // port number (2 bytes)
+        const quint16 PeerPort = static_cast<quint16> ( GetValFromStream ( vecData, iPos, 2 ) );
 
         // name
         QString strCurName;
@@ -2458,7 +2481,13 @@ bool CProtocol::EvaluateCLConnClientsListMes ( const CHostAddress& InetAddr, con
         }
 
         // add channel information to vector
-        vecChanInfo.Add ( CChannelInfo ( iChanID, strCurName, eCountry, strCurCity, iInstrument, eSkillLevel ) );
+        vecChanInfo.Add ( CChannelInfo ( iChanID,
+                                         strCurName,
+                                         eCountry,
+                                         strCurCity,
+                                         iInstrument,
+                                         eSkillLevel,
+                                         CHostAddress ( QHostAddress ( PeerAddr ), PeerPort ) ) );
     }
 
     // check size: all data is read, the position must now be at the end

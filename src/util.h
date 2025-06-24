@@ -924,19 +924,25 @@ public:
 class CChannelInfo : public CChannelCoreInfo
 {
 public:
-    CChannelInfo() : iChanID ( 0 ) {}
+    CChannelInfo() : HostAddr ( CHostAddress() ), iChanID ( 0 ) {}
 
-    CChannelInfo ( const int NiID, const CChannelCoreInfo& NCorInf ) : CChannelCoreInfo ( NCorInf ), iChanID ( NiID ) {}
+    CChannelInfo ( const int NiID, const CChannelCoreInfo& NCorInf, const CHostAddress& Addr = CHostAddress() ) :
+        CChannelCoreInfo ( NCorInf ), HostAddr ( Addr ), iChanID ( NiID ) {}
 
     CChannelInfo ( const int               NiID,
-                   const QString           NsName,
+                   const QString&          NsName,
                    const QLocale::Country& NeCountry,
                    const QString&          NsCity,
                    const int               NiInstrument,
-                   const ESkillLevel       NeSkillLevel ) :
+                   const ESkillLevel       NeSkillLevel,
+                   const CHostAddress&     Addr = CHostAddress() ) :
         CChannelCoreInfo ( NsName, NeCountry, NsCity, NiInstrument, NeSkillLevel ),
+        HostAddr ( Addr ),
         iChanID ( NiID )
     {}
+
+    // internet address of the client
+    CHostAddress HostAddr;
 
     // ID of the channel
     int iChanID;
