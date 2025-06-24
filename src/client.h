@@ -418,6 +418,10 @@ protected:
 
     CP2PManager      P2PManager;
     QVector<PeerStream*> PeerStreams;
+    CVector<uint8_t>     vecPeerNetwData;
+    CVector<int16_t>     vecPeerDecodeBuf;
+    CVector<float>       vecfMixBuffer;
+    CVector<int16_t>     vecSelfMonitorBuf;
     CClientSettings* pSettings;
 
 protected slots:
