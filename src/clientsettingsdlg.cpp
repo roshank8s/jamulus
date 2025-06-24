@@ -485,6 +485,7 @@ CClientSettingsDlg::CClientSettingsDlg ( CClient* pNCliP, CClientSettings* pNSet
 
     // P2P mode
     chbP2PMode->setCheckState ( pSettings->bUseP2PMode ? Qt::Checked : Qt::Unchecked );
+    chbPureP2PMode->setCheckState ( pSettings->bPureP2PMode ? Qt::Checked : Qt::Unchecked );
 
     // update enable small network buffers check box
     chbSmallNetworkBuffers->setCheckState ( pClient->GetEnableOPUS64() ? Qt::Checked : Qt::Unchecked );
@@ -649,6 +650,7 @@ CClientSettingsDlg::CClientSettingsDlg ( CClient* pNCliP, CClientSettings* pNSet
     QObject::connect ( chbAudioAlerts, &QCheckBox::stateChanged, this, &CClientSettingsDlg::OnAudioAlertsChanged );
 
     QObject::connect ( chbP2PMode, &QCheckBox::stateChanged, this, &CClientSettingsDlg::OnP2PModeChanged );
+    QObject::connect ( chbPureP2PMode, &QCheckBox::stateChanged, this, &CClientSettingsDlg::OnPureP2PModeChanged );
 
     // line edits
     QObject::connect ( edtNewClientLevel, &QLineEdit::editingFinished, this, &CClientSettingsDlg::OnNewClientLevelEditingFinished );
@@ -1232,4 +1234,9 @@ void CClientSettingsDlg::OnP2PModeChanged ( int value )
     }
 
     pSettings->bUseP2PMode = value == Qt::Checked;
+}
+
+void CClientSettingsDlg::OnPureP2PModeChanged ( int value )
+{
+    pSettings->bPureP2PMode = value == Qt::Checked;
 }
