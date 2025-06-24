@@ -35,6 +35,7 @@ class CP2PManager : public QObject
 
 public:
     explicit CP2PManager ( QObject* parent = nullptr );
+    ~CP2PManager();
 
     void AddPeer ( const QHostAddress& addr, quint16 port );
     void RemovePeers();

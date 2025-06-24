@@ -2,6 +2,11 @@
 
 CP2PManager::CP2PManager ( QObject* parent ) : QObject ( parent ) {}
 
+CP2PManager::~CP2PManager()
+{
+    RemovePeers();
+}
+
 void CP2PManager::AddPeer ( const QHostAddress& addr, quint16 port )
 {
     auto* peer = new CPeerConnection ( this );
