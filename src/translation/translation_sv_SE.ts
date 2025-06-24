@@ -1194,7 +1194,7 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
     </message>
     <message>
         <location filename="../clientsettingsdlg.cpp" line="66"/>
-        <location filename="../clientsettingsdlg.cpp" line="1204"/>
+        <location filename="../clientsettingsdlg.cpp" line="1211"/>
         <source>L</source>
         <translation>V</translation>
     </message>
@@ -1633,27 +1633,27 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation>ASIO enhetsinställningar</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="506"/>
+        <location filename="../clientsettingsdlg.cpp" line="510"/>
         <source>Write your name or an alias here so the other musicians you want to play with know who you are. You may also add a picture of the instrument you play and a flag of the country or region you are located in. Your city and skill level playing your instrument may also be added.</source>
         <translation>Skriv ditt namn eller ett alias här så att de andra musikerna du vill spela med vet vem du är. Du kan också lägga till en bild av instrumentet du spelar och en flagga för det land/region du befinner dig i. Din stad och din färdighetsnivå som spelar ditt instrument kan också läggas till.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="511"/>
+        <location filename="../clientsettingsdlg.cpp" line="515"/>
         <source>What you set here will appear at your fader on the mixer board when you are connected to a %1 server. This tag will also be shown at each client which is connected to the same server as you.</source>
         <translation>Det du ställer in här visas på din fader på mixerkortet när du är ansluten till en %1-server. Den här taggen kommer också att visas vid varje klient som är ansluten till samma server som du.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="522"/>
+        <location filename="../clientsettingsdlg.cpp" line="526"/>
         <source>Country/region flag button</source>
         <translation>Knapp för land/regionsflagga</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="1197"/>
+        <location filename="../clientsettingsdlg.cpp" line="1204"/>
         <source>Center</source>
         <translation>Mitten</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="1209"/>
+        <location filename="../clientsettingsdlg.cpp" line="1216"/>
         <source>R</source>
         <translation>H</translation>
     </message>
@@ -1918,8 +1918,8 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
     </message>
     <message>
         <location filename="../clientsettingsdlg.cpp" line="469"/>
-        <location filename="../clientsettingsdlg.cpp" line="608"/>
-        <location filename="../clientsettingsdlg.cpp" line="616"/>
+        <location filename="../clientsettingsdlg.cpp" line="612"/>
+        <location filename="../clientsettingsdlg.cpp" line="620"/>
         <location filename="../util.cpp" line="1099"/>
         <source>None</source>
         <translation>Ingen</translation>
@@ -1929,7 +1929,7 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation type="vanished">föredraget</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="505"/>
+        <location filename="../clientsettingsdlg.cpp" line="509"/>
         <source>Musician Profile</source>
         <translation>Musikprofil</translation>
     </message>
@@ -1942,12 +1942,12 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation type="vanished">Det du ställer in här visas på din fader på mixerkortet när du är ansluten till en Jamulus-server. Den här taggen kommer också att visas vid varje klient som är ansluten till samma server som du.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="518"/>
+        <location filename="../clientsettingsdlg.cpp" line="522"/>
         <source>Alias or name edit box</source>
         <translation>Redigeringsruta för alias eller namn</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="520"/>
+        <location filename="../clientsettingsdlg.cpp" line="524"/>
         <source>Instrument picture button</source>
         <translation>Knapp för instrumentbild</translation>
     </message>
@@ -1956,43 +1956,43 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation type="vanished">Knapp för landsflagga</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="524"/>
+        <location filename="../clientsettingsdlg.cpp" line="528"/>
         <source>City edit box</source>
         <translation>Redigeringsruta för stad</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="526"/>
+        <location filename="../clientsettingsdlg.cpp" line="530"/>
         <source>Skill level combo box</source>
         <translation>Kombinationsruta för färdighetsnivå</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="620"/>
+        <location filename="../clientsettingsdlg.cpp" line="624"/>
         <source>Beginner</source>
         <translation>Nybörjare</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="624"/>
+        <location filename="../clientsettingsdlg.cpp" line="628"/>
         <source>Intermediate</source>
         <translation>Mellannivå</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="628"/>
+        <location filename="../clientsettingsdlg.cpp" line="632"/>
         <source>Expert</source>
         <translation>Expert</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="784"/>
-        <location filename="../clientsettingsdlg.cpp" line="788"/>
+        <location filename="../clientsettingsdlg.cpp" line="791"/>
+        <location filename="../clientsettingsdlg.cpp" line="795"/>
         <source>Size: </source>
         <translation>Storlek: </translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="843"/>
+        <location filename="../clientsettingsdlg.cpp" line="850"/>
         <source>Buffer Delay</source>
         <translation>Buffertfördröjning</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="848"/>
+        <location filename="../clientsettingsdlg.cpp" line="855"/>
         <source>Buffer Delay: </source>
         <translation>Buffertfördröjning: </translation>
     </message>
@@ -2322,34 +2322,34 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation type="vanished">Enhet</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="474"/>
+        <location filename="../clientsettingsdlgbase.ui" line="488"/>
         <source>Input Channel Mapping</source>
         <translation>Kanalval för ingång</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="494"/>
-        <location filename="../clientsettingsdlgbase.ui" line="557"/>
+        <location filename="../clientsettingsdlgbase.ui" line="508"/>
+        <location filename="../clientsettingsdlgbase.ui" line="571"/>
         <source>L</source>
         <translation>V</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="510"/>
-        <location filename="../clientsettingsdlgbase.ui" line="573"/>
+        <location filename="../clientsettingsdlgbase.ui" line="524"/>
+        <location filename="../clientsettingsdlgbase.ui" line="587"/>
         <source>R</source>
         <translation>H</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="537"/>
+        <location filename="../clientsettingsdlgbase.ui" line="551"/>
         <source>Output Channel Mapping</source>
         <translation>Kanalval för utgång</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="900"/>
+        <location filename="../clientsettingsdlgbase.ui" line="914"/>
         <source>Small Network Buffers</source>
         <translation>Aktivera små nätverksbuffertar</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="670"/>
+        <location filename="../clientsettingsdlgbase.ui" line="684"/>
         <source>Buffer Delay</source>
         <translation>Buffertfördröjning</translation>
     </message>
@@ -2359,22 +2359,22 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation>Land/region</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="682"/>
+        <location filename="../clientsettingsdlgbase.ui" line="696"/>
         <source>(preferred)</source>
         <translation>(förvald)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="695"/>
+        <location filename="../clientsettingsdlgbase.ui" line="709"/>
         <source>(default)</source>
         <translation>(standard)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="708"/>
+        <location filename="../clientsettingsdlgbase.ui" line="722"/>
         <source>(safe)</source>
         <translation>(säker)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="424"/>
+        <location filename="../clientsettingsdlgbase.ui" line="438"/>
         <source>Driver Setup</source>
         <translation>Drivrutinsinställningar</translation>
     </message>
@@ -2435,61 +2435,66 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
     <message>
         <location filename="../clientsettingsdlgbase.ui" line="348"/>
         <source>Enable P2P Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Enable P2P Mode</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="366"/>
+        <location filename="../clientsettingsdlgbase.ui" line="355"/>
+        <source>Pure P2P Mode</source>
+        <translation>Pure P2P Mode</translation>
+    </message>
+    <message>
+        <location filename="../clientsettingsdlgbase.ui" line="380"/>
         <source>Audio/Network Setup</source>
         <translation>Ljud och nätverksinställningar</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="376"/>
+        <location filename="../clientsettingsdlgbase.ui" line="390"/>
         <source>Audio Device</source>
         <translation>Ljudenhet</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="738"/>
+        <location filename="../clientsettingsdlgbase.ui" line="752"/>
         <source>Jitter Buffer</source>
         <translation>Jitterbuffert</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="750"/>
+        <location filename="../clientsettingsdlgbase.ui" line="764"/>
         <source>Auto</source>
         <translation>Automatiskt</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="759"/>
+        <location filename="../clientsettingsdlgbase.ui" line="773"/>
         <source>Local</source>
         <translation>Lokalt</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="772"/>
+        <location filename="../clientsettingsdlgbase.ui" line="786"/>
         <source>Server</source>
         <translation>Server</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="789"/>
-        <location filename="../clientsettingsdlgbase.ui" line="802"/>
+        <location filename="../clientsettingsdlgbase.ui" line="803"/>
+        <location filename="../clientsettingsdlgbase.ui" line="816"/>
         <source>Size</source>
         <translation>Nivå</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="931"/>
+        <location filename="../clientsettingsdlgbase.ui" line="945"/>
         <source>kbps</source>
         <translation>kbps</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1034"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1048"/>
         <source>Custom Directories:</source>
         <translation>Anpassade kataloger:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1108"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1122"/>
         <source>Input Boost</source>
         <translation>Ingångsförstärkning</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1140"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1154"/>
         <source>Feedback Protection</source>
         <translation>Rundgångsskydd</translation>
     </message>
@@ -2498,17 +2503,17 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation type="vanished">Aktivera</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1195"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1209"/>
         <source>Input Balance</source>
         <translation>Ingångsbalans</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1206"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1220"/>
         <source>Pan</source>
         <translation>Panorera</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1289"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1303"/>
         <source>Center</source>
         <translation>Mitten</translation>
     </message>
@@ -2517,12 +2522,12 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation type="vanished">Blandade inställningar</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="623"/>
+        <location filename="../clientsettingsdlgbase.ui" line="637"/>
         <source>Audio Channels</source>
         <translation>Ljudkanaler</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="633"/>
+        <location filename="../clientsettingsdlgbase.ui" line="647"/>
         <source>Audio Quality</source>
         <translation>Ljudkvalitet</translation>
     </message>
@@ -2531,7 +2536,7 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation type="vanished">Mätningar</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="993"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1007"/>
         <source>Advanced Setup</source>
         <translation>Avancerade inställningar</translation>
     </message>
@@ -2540,7 +2545,7 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation type="vanished">Anpassad katalogserveradress:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1071"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1085"/>
         <source>New Client Level</source>
         <translation>Ny klientnivå</translation>
     </message>
@@ -2555,7 +2560,7 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation>Språk</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1086"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1100"/>
         <source>%</source>
         <translation>%</translation>
     </message>
@@ -2572,12 +2577,12 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
         <translation type="vanished">Egen katalogserveradress:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="907"/>
+        <location filename="../clientsettingsdlgbase.ui" line="921"/>
         <source>Audio Stream Rate</source>
         <translation>Ljudströmshastighet</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="941"/>
+        <location filename="../clientsettingsdlgbase.ui" line="955"/>
         <source>val</source>
         <translation>val</translation>
     </message>
@@ -2990,7 +2995,7 @@ Vi stängde av din kanal och aktiverade &apos;Tysta mig själv&apos;. Vänligen 
 <context>
     <name>CMusProfDlg</name>
     <message>
-        <location filename="../settings.cpp" line="294"/>
+        <location filename="../settings.cpp" line="304"/>
         <source>No Name</source>
         <translation>Inget namn</translation>
     </message>

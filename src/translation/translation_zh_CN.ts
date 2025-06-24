@@ -1269,7 +1269,7 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation type="vanished">自定义目录服务器地址</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="511"/>
+        <location filename="../clientsettingsdlg.cpp" line="515"/>
         <source>What you set here will appear at your fader on the mixer board when you are connected to a %1 server. This tag will also be shown at each client which is connected to the same server as you.</source>
         <translation>当你连接到一个 %1 服务器时，你填写到这里的内容会显示在代表你的那个推子上。此标签也会呈现在其它连接到相同服务器的客户端上。</translation>
     </message>
@@ -1348,7 +1348,7 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
     </message>
     <message>
         <location filename="../clientsettingsdlg.cpp" line="66"/>
-        <location filename="../clientsettingsdlg.cpp" line="1204"/>
+        <location filename="../clientsettingsdlg.cpp" line="1211"/>
         <source>L</source>
         <translation>L</translation>
     </message>
@@ -1611,12 +1611,12 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation>圆形大 LED</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="506"/>
+        <location filename="../clientsettingsdlg.cpp" line="510"/>
         <source>Write your name or an alias here so the other musicians you want to play with know who you are. You may also add a picture of the instrument you play and a flag of the country or region you are located in. Your city and skill level playing your instrument may also be added.</source>
         <translation>在此填写您的名字或别名以便合奏的其他乐手知道您是谁。您也可以添加乐器的图片以及您所在国家或地区的旗帜。您还可以添加您的城市和水平程度的相关信息。</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="522"/>
+        <location filename="../clientsettingsdlg.cpp" line="526"/>
         <source>Country/region flag button</source>
         <translation>国家/地区旗帜按钮</translation>
     </message>
@@ -1711,8 +1711,8 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
     </message>
     <message>
         <location filename="../clientsettingsdlg.cpp" line="469"/>
-        <location filename="../clientsettingsdlg.cpp" line="608"/>
-        <location filename="../clientsettingsdlg.cpp" line="616"/>
+        <location filename="../clientsettingsdlg.cpp" line="612"/>
+        <location filename="../clientsettingsdlg.cpp" line="620"/>
         <location filename="../util.cpp" line="1099"/>
         <source>None</source>
         <translation>无</translation>
@@ -1722,7 +1722,7 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation type="vanished">偏好</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="505"/>
+        <location filename="../clientsettingsdlg.cpp" line="509"/>
         <source>Musician Profile</source>
         <translation>乐手信息</translation>
     </message>
@@ -1731,12 +1731,12 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation type="vanished">在此填写您的名字或别名以便合奏的其他乐手知道您是谁。您也可以添加乐器的图片以及您所在地的旗帜。您还可以添加您的城市和水平程度的相关信息。</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="518"/>
+        <location filename="../clientsettingsdlg.cpp" line="522"/>
         <source>Alias or name edit box</source>
         <translation>名称或别名编辑框</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="520"/>
+        <location filename="../clientsettingsdlg.cpp" line="524"/>
         <source>Instrument picture button</source>
         <translation>乐器图片按钮</translation>
     </message>
@@ -1745,53 +1745,53 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation type="vanished">地区旗帜按钮</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="524"/>
+        <location filename="../clientsettingsdlg.cpp" line="528"/>
         <source>City edit box</source>
         <translation>城市编辑框</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="526"/>
+        <location filename="../clientsettingsdlg.cpp" line="530"/>
         <source>Skill level combo box</source>
         <translation>水平程度选择框</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="620"/>
+        <location filename="../clientsettingsdlg.cpp" line="624"/>
         <source>Beginner</source>
         <translation>新手</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="624"/>
+        <location filename="../clientsettingsdlg.cpp" line="628"/>
         <source>Intermediate</source>
         <translation>中级</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="628"/>
+        <location filename="../clientsettingsdlg.cpp" line="632"/>
         <source>Expert</source>
         <translation>专家</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="784"/>
-        <location filename="../clientsettingsdlg.cpp" line="788"/>
+        <location filename="../clientsettingsdlg.cpp" line="791"/>
+        <location filename="../clientsettingsdlg.cpp" line="795"/>
         <source>Size: </source>
         <translation>大小: </translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="843"/>
+        <location filename="../clientsettingsdlg.cpp" line="850"/>
         <source>Buffer Delay</source>
         <translation>缓冲区延迟</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="848"/>
+        <location filename="../clientsettingsdlg.cpp" line="855"/>
         <source>Buffer Delay: </source>
         <translation>缓冲区延迟: </translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="1197"/>
+        <location filename="../clientsettingsdlg.cpp" line="1204"/>
         <source>Center</source>
         <translation>中心</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="1209"/>
+        <location filename="../clientsettingsdlg.cpp" line="1216"/>
         <source>R</source>
         <translation>右</translation>
     </message>
@@ -2093,34 +2093,34 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation type="vanished">设备</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="474"/>
+        <location filename="../clientsettingsdlgbase.ui" line="488"/>
         <source>Input Channel Mapping</source>
         <translation>输入声道映射</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="494"/>
-        <location filename="../clientsettingsdlgbase.ui" line="557"/>
+        <location filename="../clientsettingsdlgbase.ui" line="508"/>
+        <location filename="../clientsettingsdlgbase.ui" line="571"/>
         <source>L</source>
         <translation>左</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="510"/>
-        <location filename="../clientsettingsdlgbase.ui" line="573"/>
+        <location filename="../clientsettingsdlgbase.ui" line="524"/>
+        <location filename="../clientsettingsdlgbase.ui" line="587"/>
         <source>R</source>
         <translation>右</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="537"/>
+        <location filename="../clientsettingsdlgbase.ui" line="551"/>
         <source>Output Channel Mapping</source>
         <translation>输出声道映射</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="900"/>
+        <location filename="../clientsettingsdlgbase.ui" line="914"/>
         <source>Small Network Buffers</source>
         <translation>小型网络缓冲区</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="670"/>
+        <location filename="../clientsettingsdlgbase.ui" line="684"/>
         <source>Buffer Delay</source>
         <translation>缓冲区延迟</translation>
     </message>
@@ -2130,22 +2130,22 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation>国家/地区</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="682"/>
+        <location filename="../clientsettingsdlgbase.ui" line="696"/>
         <source>(preferred)</source>
         <translation>(偏好)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="695"/>
+        <location filename="../clientsettingsdlgbase.ui" line="709"/>
         <source>(default)</source>
         <translation>(默认)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="708"/>
+        <location filename="../clientsettingsdlgbase.ui" line="722"/>
         <source>(safe)</source>
         <translation>(安全)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="424"/>
+        <location filename="../clientsettingsdlgbase.ui" line="438"/>
         <source>Driver Setup</source>
         <translation>驱动选项</translation>
     </message>
@@ -2206,61 +2206,66 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
     <message>
         <location filename="../clientsettingsdlgbase.ui" line="348"/>
         <source>Enable P2P Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Enable P2P Mode</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="366"/>
+        <location filename="../clientsettingsdlgbase.ui" line="355"/>
+        <source>Pure P2P Mode</source>
+        <translation>Pure P2P Mode</translation>
+    </message>
+    <message>
+        <location filename="../clientsettingsdlgbase.ui" line="380"/>
         <source>Audio/Network Setup</source>
         <translation>音频/网络选项</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="376"/>
+        <location filename="../clientsettingsdlgbase.ui" line="390"/>
         <source>Audio Device</source>
         <translation>音频设备</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="738"/>
+        <location filename="../clientsettingsdlgbase.ui" line="752"/>
         <source>Jitter Buffer</source>
         <translation>抖动缓冲</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="750"/>
+        <location filename="../clientsettingsdlgbase.ui" line="764"/>
         <source>Auto</source>
         <translation>自动</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="759"/>
+        <location filename="../clientsettingsdlgbase.ui" line="773"/>
         <source>Local</source>
         <translation>本地</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="772"/>
+        <location filename="../clientsettingsdlgbase.ui" line="786"/>
         <source>Server</source>
         <translation>服务器</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="789"/>
-        <location filename="../clientsettingsdlgbase.ui" line="802"/>
+        <location filename="../clientsettingsdlgbase.ui" line="803"/>
+        <location filename="../clientsettingsdlgbase.ui" line="816"/>
         <source>Size</source>
         <translation>大小</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="931"/>
+        <location filename="../clientsettingsdlgbase.ui" line="945"/>
         <source>kbps</source>
         <translation>kbps</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1034"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1048"/>
         <source>Custom Directories:</source>
         <translation>自定义目录：</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1108"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1122"/>
         <source>Input Boost</source>
         <translation>输入增强</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1140"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1154"/>
         <source>Feedback Protection</source>
         <translation>反馈保护</translation>
     </message>
@@ -2269,37 +2274,37 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation type="vanished">启用</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1195"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1209"/>
         <source>Input Balance</source>
         <translation>输入平衡</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1206"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1220"/>
         <source>Pan</source>
         <translation>左右平衡</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1289"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1303"/>
         <source>Center</source>
         <translation>中心</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="623"/>
+        <location filename="../clientsettingsdlgbase.ui" line="637"/>
         <source>Audio Channels</source>
         <translation>音频通道</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="633"/>
+        <location filename="../clientsettingsdlgbase.ui" line="647"/>
         <source>Audio Quality</source>
         <translation>音频质量</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="993"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1007"/>
         <source>Advanced Setup</source>
         <translation>高级选项</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1071"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1085"/>
         <source>New Client Level</source>
         <translation>新客户端音量</translation>
     </message>
@@ -2314,7 +2319,7 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation>语言(Lang)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1086"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1100"/>
         <source>%</source>
         <translation>%</translation>
     </message>
@@ -2323,12 +2328,12 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
         <translation type="vanished">自定义目录服务器地址:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="907"/>
+        <location filename="../clientsettingsdlgbase.ui" line="921"/>
         <source>Audio Stream Rate</source>
         <translation>音频流速度</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="941"/>
+        <location filename="../clientsettingsdlgbase.ui" line="955"/>
         <source>val</source>
         <translation>值</translation>
     </message>
@@ -2649,7 +2654,7 @@ We muted your channel and activated &apos;Mute Myself&apos;. Please solve the fe
 <context>
     <name>CMusProfDlg</name>
     <message>
-        <location filename="../settings.cpp" line="294"/>
+        <location filename="../settings.cpp" line="304"/>
         <source>No Name</source>
         <translation>无名称</translation>
     </message>

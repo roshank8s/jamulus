@@ -1527,34 +1527,34 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
     </message>
     <message>
         <location filename="../clientsettingsdlg.cpp" line="469"/>
-        <location filename="../clientsettingsdlg.cpp" line="608"/>
-        <location filename="../clientsettingsdlg.cpp" line="616"/>
+        <location filename="../clientsettingsdlg.cpp" line="612"/>
+        <location filename="../clientsettingsdlg.cpp" line="620"/>
         <location filename="../util.cpp" line="1099"/>
         <source>None</source>
         <translation>Nenastavené</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="506"/>
+        <location filename="../clientsettingsdlg.cpp" line="510"/>
         <source>Write your name or an alias here so the other musicians you want to play with know who you are. You may also add a picture of the instrument you play and a flag of the country or region you are located in. Your city and skill level playing your instrument may also be added.</source>
         <translation>Sem napíšte vaše meno alebo prezývku, aby ostatní hudobníci vedeli, s kým majú tú česť. Rovnako môžete pridať obrázok hudobného nástroja, na ktorý hráte a vlajku krajiny alebo regiónu, v ktorej/om sa nachádzate. Je možné pridať aj mesto a úroveň vašej hry na hudobný nástroj.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="511"/>
+        <location filename="../clientsettingsdlg.cpp" line="515"/>
         <source>What you set here will appear at your fader on the mixer board when you are connected to a %1 server. This tag will also be shown at each client which is connected to the same server as you.</source>
         <translation>To, čo sem napíšete sa zobrazí pri vašom prelínači na mixéri po tom, ako sa pripojíte k serveru %1. Táto menovka sa rovnako zobrazí každému klientovi, ktorý sa pripojí k tomu istému serveru ako vy.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="522"/>
+        <location filename="../clientsettingsdlg.cpp" line="526"/>
         <source>Country/region flag button</source>
         <translation>Tlačidlo s vlajkou krajiny/regiónu</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="1197"/>
+        <location filename="../clientsettingsdlg.cpp" line="1204"/>
         <source>Center</source>
         <translation>Stred</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="1209"/>
+        <location filename="../clientsettingsdlg.cpp" line="1216"/>
         <source>R</source>
         <translation>P</translation>
     </message>
@@ -1616,7 +1616,7 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
     </message>
     <message>
         <location filename="../clientsettingsdlg.cpp" line="66"/>
-        <location filename="../clientsettingsdlg.cpp" line="1204"/>
+        <location filename="../clientsettingsdlg.cpp" line="1211"/>
         <source>L</source>
         <translation>L</translation>
     </message>
@@ -1866,7 +1866,7 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation type="vanished">preferované</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="505"/>
+        <location filename="../clientsettingsdlg.cpp" line="509"/>
         <source>Musician Profile</source>
         <translation>Profil hudobníka</translation>
     </message>
@@ -1879,12 +1879,12 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation type="vanished">To, čo sem napíšete sa zobrazí pri vašom prelínači na mixéri po tom, ako sa pripojíte k Jamulus serveru. Táto menovka sa rovnako zobrazí každému klientovi, ktorý sa pripojí k tomu istému serveru ako vy.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="518"/>
+        <location filename="../clientsettingsdlg.cpp" line="522"/>
         <source>Alias or name edit box</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="520"/>
+        <location filename="../clientsettingsdlg.cpp" line="524"/>
         <source>Instrument picture button</source>
         <translation>Tlačidlo s obrázkom hud. nástroja</translation>
     </message>
@@ -1893,43 +1893,43 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation type="vanished">Tlačidlo s vlajkou krajiny</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="524"/>
+        <location filename="../clientsettingsdlg.cpp" line="528"/>
         <source>City edit box</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="526"/>
+        <location filename="../clientsettingsdlg.cpp" line="530"/>
         <source>Skill level combo box</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="620"/>
+        <location filename="../clientsettingsdlg.cpp" line="624"/>
         <source>Beginner</source>
         <translation>Začiatočník</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="624"/>
+        <location filename="../clientsettingsdlg.cpp" line="628"/>
         <source>Intermediate</source>
         <translation>Pokročilý</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="628"/>
+        <location filename="../clientsettingsdlg.cpp" line="632"/>
         <source>Expert</source>
         <translation>Expert</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="784"/>
-        <location filename="../clientsettingsdlg.cpp" line="788"/>
+        <location filename="../clientsettingsdlg.cpp" line="791"/>
+        <location filename="../clientsettingsdlg.cpp" line="795"/>
         <source>Size: </source>
         <translation>Veľkosť: </translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="843"/>
+        <location filename="../clientsettingsdlg.cpp" line="850"/>
         <source>Buffer Delay</source>
         <translation>Oneskorenie vyr. pamäte</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="848"/>
+        <location filename="../clientsettingsdlg.cpp" line="855"/>
         <source>Buffer Delay: </source>
         <translation>Oneskorenie buffera: </translation>
     </message>
@@ -2207,34 +2207,34 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation type="vanished">Zariadenie</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="474"/>
+        <location filename="../clientsettingsdlgbase.ui" line="488"/>
         <source>Input Channel Mapping</source>
         <translation>Mapovanie vstupného kanála</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="494"/>
-        <location filename="../clientsettingsdlgbase.ui" line="557"/>
+        <location filename="../clientsettingsdlgbase.ui" line="508"/>
+        <location filename="../clientsettingsdlgbase.ui" line="571"/>
         <source>L</source>
         <translation>L</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="510"/>
-        <location filename="../clientsettingsdlgbase.ui" line="573"/>
+        <location filename="../clientsettingsdlgbase.ui" line="524"/>
+        <location filename="../clientsettingsdlgbase.ui" line="587"/>
         <source>R</source>
         <translation>P</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="537"/>
+        <location filename="../clientsettingsdlgbase.ui" line="551"/>
         <source>Output Channel Mapping</source>
         <translation>Mapovanie výstupného kanála</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="900"/>
+        <location filename="../clientsettingsdlgbase.ui" line="914"/>
         <source>Small Network Buffers</source>
         <translation>Malé sieťové buffery</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="670"/>
+        <location filename="../clientsettingsdlgbase.ui" line="684"/>
         <source>Buffer Delay</source>
         <translation>Oneskorenie buffera</translation>
     </message>
@@ -2244,22 +2244,22 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation>Krajina/Región</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="682"/>
+        <location filename="../clientsettingsdlgbase.ui" line="696"/>
         <source>(preferred)</source>
         <translation>(preferované)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="695"/>
+        <location filename="../clientsettingsdlgbase.ui" line="709"/>
         <source>(default)</source>
         <translation>(predvolené)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="708"/>
+        <location filename="../clientsettingsdlgbase.ui" line="722"/>
         <source>(safe)</source>
         <translation>(bezpečné)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="424"/>
+        <location filename="../clientsettingsdlgbase.ui" line="438"/>
         <source>Driver Setup</source>
         <translation>Konfigurácia ovládača</translation>
     </message>
@@ -2320,61 +2320,66 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
     <message>
         <location filename="../clientsettingsdlgbase.ui" line="348"/>
         <source>Enable P2P Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Enable P2P Mode</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="366"/>
+        <location filename="../clientsettingsdlgbase.ui" line="355"/>
+        <source>Pure P2P Mode</source>
+        <translation>Pure P2P Mode</translation>
+    </message>
+    <message>
+        <location filename="../clientsettingsdlgbase.ui" line="380"/>
         <source>Audio/Network Setup</source>
         <translation>Nastavenie zvuku/siete</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="376"/>
+        <location filename="../clientsettingsdlgbase.ui" line="390"/>
         <source>Audio Device</source>
         <translation>Zvukové zariadenie</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="738"/>
+        <location filename="../clientsettingsdlgbase.ui" line="752"/>
         <source>Jitter Buffer</source>
         <translation>Vyrovnávacia pamäť chvenia</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="750"/>
+        <location filename="../clientsettingsdlgbase.ui" line="764"/>
         <source>Auto</source>
         <translation>Automaticky</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="759"/>
+        <location filename="../clientsettingsdlgbase.ui" line="773"/>
         <source>Local</source>
         <translation>Lokálna</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="772"/>
+        <location filename="../clientsettingsdlgbase.ui" line="786"/>
         <source>Server</source>
         <translation>Servera</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="789"/>
-        <location filename="../clientsettingsdlgbase.ui" line="802"/>
+        <location filename="../clientsettingsdlgbase.ui" line="803"/>
+        <location filename="../clientsettingsdlgbase.ui" line="816"/>
         <source>Size</source>
         <translation>Veľkosť</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="931"/>
+        <location filename="../clientsettingsdlgbase.ui" line="945"/>
         <source>kbps</source>
         <translation>kb/s</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1034"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1048"/>
         <source>Custom Directories:</source>
         <translation>Vlastné adresáre:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1108"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1122"/>
         <source>Input Boost</source>
         <translation>Zosilnenie vstupu</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1140"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1154"/>
         <source>Feedback Protection</source>
         <translation>Ochrana pred spätnou väzbou</translation>
     </message>
@@ -2383,17 +2388,17 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation type="vanished">Povoliť</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1195"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1209"/>
         <source>Input Balance</source>
         <translation>Vyváženie vstupu</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1206"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1220"/>
         <source>Pan</source>
         <translation>Posun</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1289"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1303"/>
         <source>Center</source>
         <translation>Stred</translation>
     </message>
@@ -2402,12 +2407,12 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation type="vanished">Rôzne</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="623"/>
+        <location filename="../clientsettingsdlgbase.ui" line="637"/>
         <source>Audio Channels</source>
         <translation>Zvukové kanály</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="633"/>
+        <location filename="../clientsettingsdlgbase.ui" line="647"/>
         <source>Audio Quality</source>
         <translation>Kvalita zvuku</translation>
     </message>
@@ -2416,7 +2421,7 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation type="vanished">Štatistiky</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="993"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1007"/>
         <source>Advanced Setup</source>
         <translation>Pokročilé nastavenia</translation>
     </message>
@@ -2425,7 +2430,7 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation type="vanished">Adresa vlastného adresárového servera:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1071"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1085"/>
         <source>New Client Level</source>
         <translation>Úroveň pre nových klientov</translation>
     </message>
@@ -2440,7 +2445,7 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation>Jazyk</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1086"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1100"/>
         <source>%</source>
         <translation>%</translation>
     </message>
@@ -2457,12 +2462,12 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation type="obsolete">Adresa vlastného centrálneho servera:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="907"/>
+        <location filename="../clientsettingsdlgbase.ui" line="921"/>
         <source>Audio Stream Rate</source>
         <translation>Rýchlosť streamovania zvuku</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="941"/>
+        <location filename="../clientsettingsdlgbase.ui" line="955"/>
         <source>val</source>
         <translation>hodn</translation>
     </message>
@@ -3043,7 +3048,7 @@ Stíšili sme váš kanál a aktivovali nastavenia &apos;Stíšiť ma&apos;. Pro
         <translation type="vanished">Repovanie</translation>
     </message>
     <message>
-        <location filename="../settings.cpp" line="294"/>
+        <location filename="../settings.cpp" line="304"/>
         <source>No Name</source>
         <translation>Bez názvu</translation>
     </message>
