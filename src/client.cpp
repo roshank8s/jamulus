@@ -288,6 +288,8 @@ void CClient::OnJittBufSizeChanged ( int iNewJitBufSize )
 
 void CClient::OnNewConnection()
 {
+    qInfo() << qUtf8Printable ( QString ( "> Connected to server %1" ).arg ( Channel.GetAddress().toString() ) );
+
     // a new connection was successfully initiated, send infos and request
     // connected clients list
     Channel.SetRemoteInfo ( ChannelInfo );
@@ -633,6 +635,7 @@ bool CClient::SetServerAddr ( QString strNAddr )
     {
         // apply address to the channel
         Channel.SetAddress ( HostAddress );
+        qInfo() << qUtf8Printable ( QString ( "> Set server address to %1" ).arg ( HostAddress.toString() ) );
 
         return true;
     }
@@ -1433,6 +1436,13 @@ void CClient::ProcessAudioDataIntern ( CVector<int16_t>& vecsStereoSndCrd )
 
     const bool bPureP2PActive = pSettings && pSettings->bUseP2PMode && pSettings->bPureP2PMode &&
                                 ( PeerStreams.size() >= std::max(0, iActiveChannels - 1) );
+
+    static bool bLastPureP2P = false;
+    if ( bPureP2PActive != bLastPureP2P )
+    {
+        qInfo() << qUtf8Printable ( QString ( "> Pure P2P %1" ).arg ( bPureP2PActive ? "enabled" : "disabled" ) );
+        bLastPureP2P = bPureP2PActive;
+    }
 
     if ( bPureP2PActive )
     {
