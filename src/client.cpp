@@ -204,6 +204,9 @@ CClient::~CClient()
         Sound.Stop();
     }
 
+    // clean up any P2P connections
+    P2PManager.RemovePeers();
+
     // free audio encoders and decoders
     opus_custom_encoder_destroy ( OpusEncoderMono );
     opus_custom_decoder_destroy ( OpusDecoderMono );
