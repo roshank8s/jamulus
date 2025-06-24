@@ -1222,4 +1222,13 @@ void CClientSettingsDlg::OnAudioPanValueChanged ( int value )
     UpdateAudioFaderSlider();
 }
 
-void CClientSettingsDlg::OnP2PModeChanged ( int value ) { pSettings->bUseP2PMode = value == Qt::Checked; }
+void CClientSettingsDlg::OnP2PModeChanged ( int value )
+{
+    if ( value != Qt::Checked )
+    {
+        // Clean up any existing peer connections when disabling P2P mode
+        pClient->P2PManager.RemovePeers();
+    }
+
+    pSettings->bUseP2PMode = value == Qt::Checked;
+}

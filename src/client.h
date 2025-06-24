@@ -44,6 +44,7 @@
 #include "signalhandler.h"
 
 class CClientSettings;
+class CClientSettingsDlg;
 
 #if defined( _WIN32 ) && !defined( JACK_ON_WINDOWS )
 #    include "sound/asio/sound.h"
@@ -125,6 +126,8 @@ public:
 class CClient : public QObject
 {
     Q_OBJECT
+
+    friend class CClientSettingsDlg;
 
 public:
     CClient ( const quint16  iPortNumber,
