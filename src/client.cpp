@@ -25,6 +25,7 @@
 #include "client.h"
 #include "settings.h"
 #include "peertopeer/peerstream.h"
+#include <cmath>
 
 /* Implementation *************************************************************/
 CClient::CClient ( const quint16  iPortNumber,
@@ -1250,6 +1251,10 @@ void CClient::Init()
     vecCeltData.Init ( iCeltNumCodedBytes );
     vecZeros.Init ( iStereoBlockSizeSam, 0 );
     vecsStereoSndCrdMuteStream.Init ( iStereoBlockSizeSam );
+    vecPeerNetwData.Init ( iCeltNumCodedBytes );
+    vecPeerDecodeBuf.Init ( iStereoBlockSizeSam );
+    vecfMixBuffer.Init ( iStereoBlockSizeSam, 0.0f );
+    vecSelfMonitorBuf.Init ( iStereoBlockSizeSam );
 
     opus_custom_encoder_ctl ( CurOpusEncoder,
                               OPUS_SET_BITRATE ( CalcBitRateBitsPerSecFromCodedBytes ( iCeltNumCodedBytes, iOPUSFrameSizeSamples ) ) );
@@ -1411,6 +1416,11 @@ void CClient::ProcessAudioDataIntern ( CVector<int16_t>& vecsStereoSndCrd )
         }
     }
 
+    if ( !bMuteMeInPersonalMix )
+    {
+        vecSelfMonitorBuf = vecsStereoSndCrd;
+    }
+
     for ( i = 0, j = 0; i < iSndCrdFrameSizeFactor; i++, j += iNumAudioChannels * iOPUSFrameSizeSamples )
     {
         // OPUS encoding
@@ -1478,6 +1488,71 @@ void CClient::ProcessAudioDataIntern ( CVector<int16_t>& vecsStereoSndCrd )
         for ( i = 0; i < iStereoBlockSizeSam; i++ )
         {
             vecsStereoSndCrd[i] = Float2Short ( vecsStereoSndCrd[i] + vecsStereoSndCrdMuteStream[i] * fMuteOutStreamGain );
+        }
+    }
+
+    if ( pSettings && pSettings->bUseP2PMode )
+    {
+        for ( i = 0; i < iStereoBlockSizeSam; i++ )
+        {
+            vecfMixBuffer[i] = vecsStereoSndCrd[i];
+        }
+
+        for ( auto* stream : PeerStreams )
+        {
+            for ( int b = 0, off = 0; b < iSndCrdFrameSizeFactor; b++, off += iNumAudioChannels * iOPUSFrameSizeSamples )
+            {
+                const bool ok = stream->JitterBuffer.Get ( vecPeerNetwData, iCeltNumCodedBytes );
+                unsigned char* pData = ok ? &vecPeerNetwData[0] : nullptr;
+                if ( CurOpusDecoder != nullptr )
+                {
+                    opus_custom_decode ( CurOpusDecoder, pData, iCeltNumCodedBytes, &vecPeerDecodeBuf[off], iOPUSFrameSizeSamples );
+                }
+            }
+
+            if ( !stream->Mute )
+            {
+                const float fGain  = stream->Gain;
+                const float fPan   = stream->Pan;
+                const float fGainL = MathUtils::GetLeftPan ( fPan, false ) * fGain;
+                const float fGainR = MathUtils::GetRightPan ( fPan, false ) * fGain;
+                for ( int n = 0, k = 0; n < iMonoBlockSizeSam; n++, k += 2 )
+                {
+                    vecfMixBuffer[k] += fGainL * vecPeerDecodeBuf[k];
+                    vecfMixBuffer[k + 1] += fGainR * vecPeerDecodeBuf[k + 1];
+                }
+            }
+        }
+
+        if ( !bMuteMeInPersonalMix )
+        {
+            for ( i = 0; i < iStereoBlockSizeSam; i++ )
+            {
+                vecfMixBuffer[i] += vecSelfMonitorBuf[i];
+            }
+        }
+
+        float fMax = 0.0f;
+        for ( i = 0; i < iStereoBlockSizeSam; i++ )
+        {
+            const float fAbs = std::fabs ( vecfMixBuffer[i] );
+            if ( fAbs > fMax )
+            {
+                fMax = fAbs;
+            }
+        }
+        if ( fMax > _MAXSHORT )
+        {
+            const float fScale = _MAXSHORT / fMax;
+            for ( i = 0; i < iStereoBlockSizeSam; i++ )
+            {
+                vecfMixBuffer[i] *= fScale;
+            }
+        }
+
+        for ( i = 0; i < iStereoBlockSizeSam; i++ )
+        {
+            vecsStereoSndCrd[i] = Float2Short ( vecfMixBuffer[i] );
         }
     }
 
