@@ -1228,6 +1228,7 @@ void CClientSettingsDlg::OnP2PModeChanged ( int value )
     {
         // Clean up any existing peer connections when disabling P2P mode
         pClient->P2PManager.RemovePeers();
+        pClient->RemovePeerStreams();
     }
 
     pSettings->bUseP2PMode = value == Qt::Checked;

@@ -28,6 +28,7 @@
 #include <QUdpSocket>
 #include <QHostAddress>
 #include "buffer.h"
+#include "util.h"
 
 class CPeerConnection : public QObject
 {
@@ -40,7 +41,7 @@ public:
     void SendAudioData ( const CVector<uint8_t>& data );
 
 signals:
-    void AudioPacketReceived ( const CVector<uint8_t>& data );
+    void AudioPacketReceived ( const CHostAddress& addr, const CVector<uint8_t>& data );
 
 private slots:
     void OnReadyRead();

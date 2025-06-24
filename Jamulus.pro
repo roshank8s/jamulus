@@ -402,7 +402,8 @@ HEADERS += src/plugins/audioreverb.h \
     src/recorder/cwavestream.h \
     src/signalhandler.h \
     src/peertopeer/p2pmanager.h \
-    src/peertopeer/peerconnection.h
+    src/peertopeer/peerconnection.h \
+    src/peertopeer/peerstream.h
 
 !contains(CONFIG, "serveronly") {
     HEADERS += src/client.h \
@@ -511,7 +512,8 @@ SOURCES += src/plugins/audioreverb.cpp \
     src/recorder/creaperproject.cpp \
     src/recorder/cwavestream.cpp \
     src/peertopeer/p2pmanager.cpp \
-    src/peertopeer/peerconnection.cpp
+    src/peertopeer/peerconnection.cpp \
+    src/peertopeer/peerstream.cpp
 
 !contains(CONFIG, "serveronly") {
     SOURCES += src/client.cpp \

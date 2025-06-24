@@ -41,6 +41,7 @@
 #include "plugins/audioreverb.h"
 #include "buffer.h"
 #include "peertopeer/p2pmanager.h"
+#include "peertopeer/peerstream.h"
 #include "signalhandler.h"
 
 class CClientSettings;
@@ -315,6 +316,7 @@ protected:
     void CreateServerJitterBufferMessage();
 
     void ClearClientChannels();
+    void RemovePeerStreams();
     void FreeClientChannel ( const int iServerChannelID );
     int  FindClientChannel ( const int iServerChannelID, const bool bCreateIfNew ); // returns a client channel ID or INVALID_INDEX
     bool ReorderLevelList ( CVector<uint16_t>& vecLevelList );                      // modifies vecLevelList, passed by reference
@@ -415,6 +417,7 @@ protected:
     CSignalHandler* pSignalHandler;
 
     CP2PManager      P2PManager;
+    QVector<PeerStream*> PeerStreams;
     CClientSettings* pSettings;
 
 protected slots:
@@ -439,7 +442,7 @@ protected slots:
 
     void OnSendCLProtMessage ( CHostAddress InetAddr, CVector<uint8_t> vecMessage );
 
-    void OnPeerAudioReceived ( const CVector<uint8_t>& data );
+    void OnPeerAudioReceived ( const CHostAddress& addr, const CVector<uint8_t>& data );
 
     void OnCLPingWithNumClientsReceived ( CHostAddress InetAddr, int iMs, int iNumClients );
 

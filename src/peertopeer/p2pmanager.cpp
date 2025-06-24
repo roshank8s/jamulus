@@ -1,4 +1,5 @@
 #include "peertopeer/p2pmanager.h"
+#include "util.h"
 
 CP2PManager::CP2PManager ( QObject* parent ) : QObject ( parent ) {}
 
@@ -11,7 +12,10 @@ void CP2PManager::AddPeer ( const QHostAddress& addr, quint16 port )
 {
     auto* peer = new CPeerConnection ( this );
     peer->SetPeerAddress ( addr, port );
-    QObject::connect ( peer, &CPeerConnection::AudioPacketReceived, this, &CP2PManager::PeerAudioReceived );
+    QObject::connect ( peer,
+                      &CPeerConnection::AudioPacketReceived,
+                      this,
+                      &CP2PManager::PeerAudioReceived );
     Peers.append ( peer );
 }
 
