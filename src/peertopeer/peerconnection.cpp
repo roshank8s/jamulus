@@ -25,12 +25,17 @@ void CPeerConnection::OnReadyRead()
 {
     while ( Socket.hasPendingDatagrams() )
     {
-        const qint64 len = Socket.readDatagram ( reinterpret_cast<char*> ( &RecvBuffer[0] ), MAX_SIZE_BYTES_NETW_BUF );
+        QHostAddress sender;
+        quint16      senderPort = 0;
+        const qint64 len = Socket.readDatagram ( reinterpret_cast<char*> ( &RecvBuffer[0] ),
+                                                MAX_SIZE_BYTES_NETW_BUF,
+                                                &sender,
+                                                &senderPort );
         if ( len > 0 )
         {
             CVector<uint8_t> data ( static_cast<int> ( len ) );
             std::copy_n ( RecvBuffer.begin(), len, data.begin() );
-            emit AudioPacketReceived ( data );
+            emit AudioPacketReceived ( CHostAddress ( sender, senderPort ), data );
         }
     }
 }

@@ -28,6 +28,7 @@
 #include <QList>
 #include <QHostAddress>
 #include "peertopeer/peerconnection.h"
+#include "util.h"
 
 class CP2PManager : public QObject
 {
@@ -42,7 +43,7 @@ public:
     void SendAudioToPeers ( const CVector<uint8_t>& data );
 
 signals:
-    void PeerAudioReceived ( const CVector<uint8_t>& data );
+    void PeerAudioReceived ( CHostAddress addr, const CVector<uint8_t>& data );
 
 private:
     QList<CPeerConnection*> Peers;

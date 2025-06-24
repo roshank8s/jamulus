@@ -24,6 +24,7 @@
 
 #include "client.h"
 #include "settings.h"
+#include "peertopeer/peerstream.h"
 
 /* Implementation *************************************************************/
 CClient::CClient ( const quint16  iPortNumber,
@@ -206,6 +207,7 @@ CClient::~CClient()
 
     // clean up any P2P connections
     P2PManager.RemovePeers();
+    RemovePeerStreams();
 
     // free audio encoders and decoders
     opus_custom_encoder_destroy ( OpusEncoderMono );
@@ -236,11 +238,18 @@ void CClient::OnSendCLProtMessage ( CHostAddress InetAddr, CVector<uint8_t> vecM
     Socket.SendPacket ( vecMessage, InetAddr );
 }
 
-void CClient::OnPeerAudioReceived ( const CVector<uint8_t>& data )
+void CClient::OnPeerAudioReceived ( const CHostAddress& addr, const CVector<uint8_t>& data )
 {
     if ( pSettings && pSettings->bUseP2PMode )
     {
-        Channel.PutAudioData ( data, data.Size(), Channel.GetAddress() );
+        for ( auto* stream : PeerStreams )
+        {
+            if ( stream->Address == addr )
+            {
+                stream->JitterBuffer.Put ( data, data.Size() );
+                break;
+            }
+        }
     }
 }
 
@@ -327,6 +336,10 @@ void CClient::OnCLConnClientsListMesReceived ( CHostAddress inetAddr, CVector<CC
             if ( chanInfo.iChanID != clientChannels[0].iServerChannelID )
             {
                 P2PManager.AddPeer ( inetAddr.InetAddr, inetAddr.iPort );
+                auto* ps = new PeerStream ( CHostAddress ( inetAddr.InetAddr, inetAddr.iPort ) );
+                ps->JitterBuffer.SetUseDoubleSystemFrameSize ( Channel.GetAudioCompressionType() == CT_OPUS );
+                ps->JitterBuffer.Init ( Channel.GetCeltNumCodedBytes(), Channel.GetSockBufNumFrames(), false );
+                PeerStreams.append ( ps );
             }
         }
     }
@@ -1560,6 +1573,12 @@ void CClient::ClearClientChannels()
     }
 
     // qInfo() << "> Client channel list cleared";
+}
+
+void CClient::RemovePeerStreams()
+{
+    qDeleteAll ( PeerStreams );
+    PeerStreams.clear();
 }
 
 void CClient::FreeClientChannel ( const int iServerChannelID )
