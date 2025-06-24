@@ -60,12 +60,7 @@ public:
         if ( pGApp != nullptr )
         {
 #    ifndef QT_NO_SESSIONMANAGER
-            QObject::connect (
-                pGApp,
-                &QGuiApplication::saveStateRequest,
-                this,
-                [=] ( QSessionManager& ) { Save ( false ); },
-                Qt::DirectConnection );
+            QObject::connect ( pGApp, &QGuiApplication::saveStateRequest, this, [=] ( QSessionManager& ) { Save ( false ); }, Qt::DirectConnection );
 
 #    endif
             QObject::connect ( pGApp, &QGuiApplication::applicationStateChanged, this, [=] ( Qt::ApplicationState state ) {
@@ -157,6 +152,7 @@ public:
         eDirectoryType ( AT_DEFAULT ),
         bEnableFeedbackDetection ( true ),
         bEnableAudioAlerts ( false ),
+        bUseP2PMode ( false ),
         vecWindowPosSettings(), // empty array
         vecWindowPosChat(),     // empty array
         vecWindowPosConnect(),  // empty array
@@ -191,6 +187,7 @@ public:
     int              iCustomDirectoryIndex; // index of selected custom directory
     bool             bEnableFeedbackDetection;
     bool             bEnableAudioAlerts;
+    bool             bUseP2PMode;
 
     // window position/state settings
     QByteArray vecWindowPosSettings;

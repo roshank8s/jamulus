@@ -106,6 +106,7 @@ public slots:
     void OnTabChanged();
     void OnMakeTabChange ( int iTabIdx );
     void OnAudioPanValueChanged ( int value );
+    void OnP2PModeChanged ( int value );
 
 #if defined( _WIN32 ) && !defined( WITH_JACK )
     // Only include this slot for Windows when JACK is NOT used

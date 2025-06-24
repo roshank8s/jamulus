@@ -40,6 +40,7 @@
 #include "util.h"
 #include "plugins/audioreverb.h"
 #include "buffer.h"
+#include "peertopeer/p2pmanager.h"
 #include "signalhandler.h"
 
 #if defined( _WIN32 ) && !defined( JACK_ON_WINDOWS )
@@ -286,10 +287,10 @@ public:
         Channel.GetBufErrorRates ( vecErrRates, dLimit, dMaxUpLimit );
     }
 
-    //### TODO: BEGIN ###//
-    // Refactor this to use signal/slot mechanism. https://github.com/jamulussoftware/jamulus/pull/3479/files#r1976382416
+    // ### TODO: BEGIN ###//
+    //  Refactor this to use signal/slot mechanism. https://github.com/jamulussoftware/jamulus/pull/3479/files#r1976382416
     CProtocol* getConnLessProtocol() { return &ConnLessProtocol; }
-    //### TODO: END ###//
+    // ### TODO: END ###//
 
     // settings
     CChannelCoreInfo ChannelInfo;
@@ -407,6 +408,8 @@ protected:
 
     CSignalHandler* pSignalHandler;
 
+    CP2PManager P2PManager;
+
 protected slots:
     void OnHandledSignal ( int sigNum );
     void OnSendProtMessage ( CVector<uint8_t> vecMessage );
@@ -428,6 +431,8 @@ protected slots:
     void OnCLPingReceived ( CHostAddress InetAddr, int iMs );
 
     void OnSendCLProtMessage ( CHostAddress InetAddr, CVector<uint8_t> vecMessage );
+
+    void OnPeerAudioReceived ( const CVector<uint8_t>& data );
 
     void OnCLPingWithNumClientsReceived ( CHostAddress InetAddr, int iMs, int iNumClients );
 

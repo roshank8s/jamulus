@@ -483,6 +483,9 @@ CClientSettingsDlg::CClientSettingsDlg ( CClient* pNCliP, CClientSettings* pNSet
     // update feedback detection
     chbDetectFeedback->setCheckState ( pSettings->bEnableFeedbackDetection ? Qt::Checked : Qt::Unchecked );
 
+    // P2P mode
+    chbP2PMode->setCheckState ( pSettings->bUseP2PMode ? Qt::Checked : Qt::Unchecked );
+
     // update enable small network buffers check box
     chbSmallNetworkBuffers->setCheckState ( pClient->GetEnableOPUS64() ? Qt::Checked : Qt::Unchecked );
 
@@ -644,6 +647,8 @@ CClientSettingsDlg::CClientSettingsDlg ( CClient* pNCliP, CClientSettings* pNSet
     QObject::connect ( chbDetectFeedback, &QCheckBox::stateChanged, this, &CClientSettingsDlg::OnFeedbackDetectionChanged );
 
     QObject::connect ( chbAudioAlerts, &QCheckBox::stateChanged, this, &CClientSettingsDlg::OnAudioAlertsChanged );
+
+    QObject::connect ( chbP2PMode, &QCheckBox::stateChanged, this, &CClientSettingsDlg::OnP2PModeChanged );
 
     // line edits
     QObject::connect ( edtNewClientLevel, &QLineEdit::editingFinished, this, &CClientSettingsDlg::OnNewClientLevelEditingFinished );
@@ -1216,3 +1221,5 @@ void CClientSettingsDlg::OnAudioPanValueChanged ( int value )
     pClient->SetAudioInFader ( value );
     UpdateAudioFaderSlider();
 }
+
+void CClientSettingsDlg::OnP2PModeChanged ( int value ) { pSettings->bUseP2PMode = value == Qt::Checked; }

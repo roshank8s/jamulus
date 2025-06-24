@@ -340,11 +340,18 @@
                <height>14</height>
               </size>
              </property>
-            </spacer>
-           </item>
-          </layout>
-         </item>
-         <item>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chbP2PMode">
+              <property name="text">
+               <string>Enable P2P Mode</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
           <spacer name="horizontalSpacer_2">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -1378,6 +1385,7 @@
   <tabstop>edtNewClientLevel</tabstop>
   <tabstop>cbxInputBoost</tabstop>
   <tabstop>chbDetectFeedback</tabstop>
+  <tabstop>chbP2PMode</tabstop>
   <tabstop>sldAudioPan</tabstop>
  </tabstops>
  <resources>

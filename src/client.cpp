@@ -139,6 +139,8 @@ CClient::CClient ( const quint16  iPortNumber,
 
     QObject::connect ( &ConnLessProtocol, &CProtocol::CLMessReadyForSending, this, &CClient::OnSendCLProtMessage );
 
+    QObject::connect ( &P2PManager, &CP2PManager::PeerAudioReceived, this, &CClient::OnPeerAudioReceived );
+
     QObject::connect ( &ConnLessProtocol, &CProtocol::CLServerListReceived, this, &CClient::CLServerListReceived );
 
     QObject::connect ( &ConnLessProtocol, &CProtocol::CLRedServerListReceived, this, &CClient::CLRedServerListReceived );
@@ -229,6 +231,8 @@ void CClient::OnSendCLProtMessage ( CHostAddress InetAddr, CVector<uint8_t> vecM
     Socket.SendPacket ( vecMessage, InetAddr );
 }
 
+void CClient::OnPeerAudioReceived ( const CVector<uint8_t>& data ) { Channel.PutAudioData ( data, data.Size(), Channel.GetAddress() ); }
+
 void CClient::OnInvalidPacketReceived ( CHostAddress RecHostAddr )
 {
     // message could not be parsed, check if the packet comes
@@ -275,10 +279,10 @@ void CClient::OnNewConnection()
     Channel.CreateReqConnClientsList();
     CreateServerJitterBufferMessage();
 
-    //### TODO: BEGIN ###//
-    // needed for compatibility to old servers >= 3.4.6 and <= 3.5.12
+    // ### TODO: BEGIN ###//
+    //  needed for compatibility to old servers >= 3.4.6 and <= 3.5.12
     Channel.CreateReqChannelLevelListMes();
-    //### TODO: END ###//
+    // ### TODO: END ###//
 }
 
 void CClient::OnMuteStateHasChangedReceived ( int iServerChanID, bool bIsMuted )
@@ -1248,13 +1252,13 @@ void CClient::AudioCallback ( CVector<int16_t>& psData, void* arg )
     // process audio data
     pMyClientObj->ProcessSndCrdAudioData ( psData );
 
-    //### TEST: BEGIN ###//
-    // do a soundcard jitter measurement
+    // ### TEST: BEGIN ###//
+    //  do a soundcard jitter measurement
     /*
     static CTimingMeas JitterMeas ( 1000, "test2.dat" );
     JitterMeas.Measure();
     */
-    //### TEST: END ###//
+    // ### TEST: END ###//
 }
 
 void CClient::ProcessSndCrdAudioData ( CVector<int16_t>& vecsStereoSndCrd )
@@ -1383,6 +1387,9 @@ void CClient::ProcessAudioDataIntern ( CVector<int16_t>& vecsStereoSndCrd )
 
         // send coded audio through the network
         Channel.PrepAndSendPacket ( &Socket, vecCeltData, iCeltNumCodedBytes );
+
+        // forward packet to peers if any
+        P2PManager.SendAudioToPeers ( vecCeltData );
     }
 
     // Receive signal ----------------------------------------------------------
