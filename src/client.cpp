@@ -147,7 +147,7 @@ CClient::CClient ( const quint16  iPortNumber,
 
     QObject::connect ( &ConnLessProtocol, &CProtocol::CLRedServerListReceived, this, &CClient::CLRedServerListReceived );
 
-    QObject::connect ( &ConnLessProtocol, &CProtocol::CLConnClientsListMesReceived, this, &CClient::CLConnClientsListMesReceived );
+    QObject::connect ( &ConnLessProtocol, &CProtocol::CLConnClientsListMesReceived, this, &CClient::OnCLConnClientsListMesReceived );
 
     QObject::connect ( &ConnLessProtocol, &CProtocol::CLPingReceived, this, &CClient::OnCLPingReceived );
 
@@ -315,6 +315,23 @@ void CClient::OnCLChannelLevelListReceived ( CHostAddress InetAddr, CVector<uint
     {
         emit CLChannelLevelListReceived ( InetAddr, vecLevelList );
     }
+}
+
+void CClient::OnCLConnClientsListMesReceived ( CHostAddress inetAddr, CVector<CChannelInfo> vecChanInfo )
+{
+    if ( pSettings && pSettings->bUseP2PMode )
+    {
+        for ( const auto& chanInfo : vecChanInfo )
+        {
+            // avoid adding ourselves as a peer
+            if ( chanInfo.iChanID != clientChannels[0].iServerChannelID )
+            {
+                P2PManager.AddPeer ( inetAddr.InetAddr, inetAddr.iPort );
+            }
+        }
+    }
+
+    emit CLConnClientsListMesReceived ( inetAddr, vecChanInfo );
 }
 
 void CClient::OnConClientListMesReceived ( CVector<CChannelInfo> vecChanInfo )
