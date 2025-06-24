@@ -452,6 +452,7 @@ protected slots:
     void OnClientIDReceived ( int iServerChanID );
     void OnMuteStateHasChangedReceived ( int iServerChanID, bool bIsMuted );
     void OnCLChannelLevelListReceived ( CHostAddress InetAddr, CVector<uint16_t> vecLevelList );
+    void OnCLConnClientsListMesReceived ( CHostAddress inetAddr, CVector<CChannelInfo> vecChanInfo );
     void OnConClientListMesReceived ( CVector<CChannelInfo> vecChanInfo );
 
 signals:
