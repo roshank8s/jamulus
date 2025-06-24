@@ -1791,34 +1791,34 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
     </message>
     <message>
         <location filename="../clientsettingsdlg.cpp" line="469"/>
-        <location filename="../clientsettingsdlg.cpp" line="608"/>
-        <location filename="../clientsettingsdlg.cpp" line="616"/>
+        <location filename="../clientsettingsdlg.cpp" line="612"/>
+        <location filename="../clientsettingsdlg.cpp" line="620"/>
         <location filename="../util.cpp" line="1099"/>
         <source>None</source>
         <translation>Ninguno</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="506"/>
+        <location filename="../clientsettingsdlg.cpp" line="510"/>
         <source>Write your name or an alias here so the other musicians you want to play with know who you are. You may also add a picture of the instrument you play and a flag of the country or region you are located in. Your city and skill level playing your instrument may also be added.</source>
         <translation>Escribe tu nombre o un alias aquí para que otros músicos con quien quieras tocar sepan quién eres. Puedes además añadir una imagen del instrumento que tocas y la bandera del país o la región donde te ubicas. Tu ciudad y tu nivel de habilidad con el instrumento también pueden añadirse.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="511"/>
+        <location filename="../clientsettingsdlg.cpp" line="515"/>
         <source>What you set here will appear at your fader on the mixer board when you are connected to a %1 server. This tag will also be shown at each client which is connected to the same server as you.</source>
         <translation>Lo que introduzcas aquí aparecerá en tu fader del mezclador cuando te conectes a un servidor %1. Esta etiqueta también se mostrará a cada cliente que se conecte al mismo servidor que tú.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="522"/>
+        <location filename="../clientsettingsdlg.cpp" line="526"/>
         <source>Country/region flag button</source>
         <translation>Botón bandera país/región</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="1197"/>
+        <location filename="../clientsettingsdlg.cpp" line="1204"/>
         <source>Center</source>
         <translation>Centro</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="1209"/>
+        <location filename="../clientsettingsdlg.cpp" line="1216"/>
         <source>R</source>
         <translation>R</translation>
     </message>
@@ -2084,7 +2084,7 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
     </message>
     <message>
         <location filename="../clientsettingsdlg.cpp" line="66"/>
-        <location filename="../clientsettingsdlg.cpp" line="1204"/>
+        <location filename="../clientsettingsdlg.cpp" line="1211"/>
         <source>L</source>
         <translation>L</translation>
     </message>
@@ -2314,7 +2314,7 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">aconsejado</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="505"/>
+        <location filename="../clientsettingsdlg.cpp" line="509"/>
         <source>Musician Profile</source>
         <translation>Perfil Músico</translation>
     </message>
@@ -2327,12 +2327,12 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">Lo que introduzcas aquí aparecerá en tu fader del mezclador cuando te conectes a un servidor Jamulus. Esta etiqueta también se mostrará en cada cliente conectado al mismo servidor que tú.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="518"/>
+        <location filename="../clientsettingsdlg.cpp" line="522"/>
         <source>Alias or name edit box</source>
         <translation>Campo para alias o nombre</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="520"/>
+        <location filename="../clientsettingsdlg.cpp" line="524"/>
         <source>Instrument picture button</source>
         <translation>Botón imagen instrumento</translation>
     </message>
@@ -2341,43 +2341,43 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">Botón bandera país</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="524"/>
+        <location filename="../clientsettingsdlg.cpp" line="528"/>
         <source>City edit box</source>
         <translation>Casilla para editar ciudad</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="526"/>
+        <location filename="../clientsettingsdlg.cpp" line="530"/>
         <source>Skill level combo box</source>
         <translation>Casilla para nivel de habilidad</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="620"/>
+        <location filename="../clientsettingsdlg.cpp" line="624"/>
         <source>Beginner</source>
         <translation>Principiante</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="624"/>
+        <location filename="../clientsettingsdlg.cpp" line="628"/>
         <source>Intermediate</source>
         <translation>Intermedio</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="628"/>
+        <location filename="../clientsettingsdlg.cpp" line="632"/>
         <source>Expert</source>
         <translation>Experto</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="784"/>
-        <location filename="../clientsettingsdlg.cpp" line="788"/>
+        <location filename="../clientsettingsdlg.cpp" line="791"/>
+        <location filename="../clientsettingsdlg.cpp" line="795"/>
         <source>Size: </source>
         <translation>Tamaño: </translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="843"/>
+        <location filename="../clientsettingsdlg.cpp" line="850"/>
         <source>Buffer Delay</source>
         <translation>Retardo Buffer</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="848"/>
+        <location filename="../clientsettingsdlg.cpp" line="855"/>
         <source>Buffer Delay: </source>
         <translation>Retardo Buffer: </translation>
     </message>
@@ -2659,34 +2659,34 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">Dispositivo</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="474"/>
+        <location filename="../clientsettingsdlgbase.ui" line="488"/>
         <source>Input Channel Mapping</source>
         <translation>Mapeo Canales Entrada</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="494"/>
-        <location filename="../clientsettingsdlgbase.ui" line="557"/>
+        <location filename="../clientsettingsdlgbase.ui" line="508"/>
+        <location filename="../clientsettingsdlgbase.ui" line="571"/>
         <source>L</source>
         <translation>L</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="510"/>
-        <location filename="../clientsettingsdlgbase.ui" line="573"/>
+        <location filename="../clientsettingsdlgbase.ui" line="524"/>
+        <location filename="../clientsettingsdlgbase.ui" line="587"/>
         <source>R</source>
         <translation>R</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="537"/>
+        <location filename="../clientsettingsdlgbase.ui" line="551"/>
         <source>Output Channel Mapping</source>
         <translation>Mapeo Canales Salida</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="900"/>
+        <location filename="../clientsettingsdlgbase.ui" line="914"/>
         <source>Small Network Buffers</source>
         <translation>Buffers Red Pequeños</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="670"/>
+        <location filename="../clientsettingsdlgbase.ui" line="684"/>
         <source>Buffer Delay</source>
         <translation>Retardo Buffer</translation>
     </message>
@@ -2696,22 +2696,22 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation>País/Región</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="682"/>
+        <location filename="../clientsettingsdlgbase.ui" line="696"/>
         <source>(preferred)</source>
         <translation>(aconsejado)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="695"/>
+        <location filename="../clientsettingsdlgbase.ui" line="709"/>
         <source>(default)</source>
         <translation>(predeterminado)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="708"/>
+        <location filename="../clientsettingsdlgbase.ui" line="722"/>
         <source>(safe)</source>
         <translation>(seguro)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="424"/>
+        <location filename="../clientsettingsdlgbase.ui" line="438"/>
         <source>Driver Setup</source>
         <translation>Configuración Driver</translation>
     </message>
@@ -2772,46 +2772,51 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
     <message>
         <location filename="../clientsettingsdlgbase.ui" line="348"/>
         <source>Enable P2P Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Enable P2P Mode</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="366"/>
+        <location filename="../clientsettingsdlgbase.ui" line="355"/>
+        <source>Pure P2P Mode</source>
+        <translation>Pure P2P Mode</translation>
+    </message>
+    <message>
+        <location filename="../clientsettingsdlgbase.ui" line="380"/>
         <source>Audio/Network Setup</source>
         <translation>Configuración Audio/Red</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="376"/>
+        <location filename="../clientsettingsdlgbase.ui" line="390"/>
         <source>Audio Device</source>
         <translation>Dispositivo de Audio</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="738"/>
+        <location filename="../clientsettingsdlgbase.ui" line="752"/>
         <source>Jitter Buffer</source>
         <translation>Jitter Buffer</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="750"/>
+        <location filename="../clientsettingsdlgbase.ui" line="764"/>
         <source>Auto</source>
         <translation>Auto</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="759"/>
+        <location filename="../clientsettingsdlgbase.ui" line="773"/>
         <source>Local</source>
         <translation>Local</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="772"/>
+        <location filename="../clientsettingsdlgbase.ui" line="786"/>
         <source>Server</source>
         <translation>Servidor</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="789"/>
-        <location filename="../clientsettingsdlgbase.ui" line="802"/>
+        <location filename="../clientsettingsdlgbase.ui" line="803"/>
+        <location filename="../clientsettingsdlgbase.ui" line="816"/>
         <source>Size</source>
         <translation>Valor</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="931"/>
+        <location filename="../clientsettingsdlgbase.ui" line="945"/>
         <source>kbps</source>
         <translation>kbps</translation>
     </message>
@@ -2820,12 +2825,12 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">ms</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1108"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1122"/>
         <source>Input Boost</source>
         <translation>Aumento de Entrada</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1140"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1154"/>
         <source>Feedback Protection</source>
         <translation>Protección contra Retroalimentación</translation>
     </message>
@@ -2834,17 +2839,17 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">Activar</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1195"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1209"/>
         <source>Input Balance</source>
         <translation>Balance Entrada</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1206"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1220"/>
         <source>Pan</source>
         <translation>Paneo</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1289"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1303"/>
         <source>Center</source>
         <translation>Centro</translation>
     </message>
@@ -2853,12 +2858,12 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">Varios</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="623"/>
+        <location filename="../clientsettingsdlgbase.ui" line="637"/>
         <source>Audio Channels</source>
         <translation>Canales Audio</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="633"/>
+        <location filename="../clientsettingsdlgbase.ui" line="647"/>
         <source>Audio Quality</source>
         <translation>Calidad Audio</translation>
     </message>
@@ -2867,7 +2872,7 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">Mediciones</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="993"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1007"/>
         <source>Advanced Setup</source>
         <translation>Configuración Avanzada</translation>
     </message>
@@ -2876,7 +2881,7 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">Dirección Personalizada Servidor Central:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1071"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1085"/>
         <source>New Client Level</source>
         <translation>Nivel Cliente Nuevo</translation>
     </message>
@@ -2891,12 +2896,12 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation>Idioma</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1034"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1048"/>
         <source>Custom Directories:</source>
         <translation>Directorios Personalizados:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1086"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1100"/>
         <source>%</source>
         <translation>%</translation>
     </message>
@@ -2921,12 +2926,12 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">Dirección Servidor Central:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="907"/>
+        <location filename="../clientsettingsdlgbase.ui" line="921"/>
         <source>Audio Stream Rate</source>
         <translation>Tasa Muestreo Audio</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="941"/>
+        <location filename="../clientsettingsdlgbase.ui" line="955"/>
         <source>val</source>
         <translation>val</translation>
     </message>
@@ -3639,7 +3644,7 @@ Hemos silenciado tu canal y activado &apos;Silenciarme Yo&apos;. Por favor resue
         <translation type="vanished">Rapeo</translation>
     </message>
     <message>
-        <location filename="../settings.cpp" line="294"/>
+        <location filename="../settings.cpp" line="304"/>
         <source>No Name</source>
         <translation>Sin Nombre</translation>
     </message>

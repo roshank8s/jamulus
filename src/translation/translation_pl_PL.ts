@@ -1396,34 +1396,34 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
     </message>
     <message>
         <location filename="../clientsettingsdlg.cpp" line="469"/>
-        <location filename="../clientsettingsdlg.cpp" line="608"/>
-        <location filename="../clientsettingsdlg.cpp" line="616"/>
+        <location filename="../clientsettingsdlg.cpp" line="612"/>
+        <location filename="../clientsettingsdlg.cpp" line="620"/>
         <location filename="../util.cpp" line="1099"/>
         <source>None</source>
         <translation>Brak</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="506"/>
+        <location filename="../clientsettingsdlg.cpp" line="510"/>
         <source>Write your name or an alias here so the other musicians you want to play with know who you are. You may also add a picture of the instrument you play and a flag of the country or region you are located in. Your city and skill level playing your instrument may also be added.</source>
         <translation>Wpisz swoje imię lub przezwisko, żeby inni muzycy, z którymi chesz grać wiedzieli kim jesteś. Możesz także dodać ikonę instrumentu, na którym grasz oraz flagę kraju/regionu i miasto, z którego pochodzisz, a także poziom umiejętności.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="511"/>
+        <location filename="../clientsettingsdlg.cpp" line="515"/>
         <source>What you set here will appear at your fader on the mixer board when you are connected to a %1 server. This tag will also be shown at each client which is connected to the same server as you.</source>
         <translation>To co zostanie tu wpisane pojawi się na suwaku miksera podczas połączenia z serwerem %1. Ta etykieta będzie także wyświetlana u innych muzyków podłączonych do tego samego serwera.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="522"/>
+        <location filename="../clientsettingsdlg.cpp" line="526"/>
         <source>Country/region flag button</source>
         <translation>Przycisk wyboru flagi kraju/regionu</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="1197"/>
+        <location filename="../clientsettingsdlg.cpp" line="1204"/>
         <source>Center</source>
         <translation>Środek</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="1209"/>
+        <location filename="../clientsettingsdlg.cpp" line="1216"/>
         <source>R</source>
         <translation>P</translation>
     </message>
@@ -1636,7 +1636,7 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
     </message>
     <message>
         <location filename="../clientsettingsdlg.cpp" line="66"/>
-        <location filename="../clientsettingsdlg.cpp" line="1204"/>
+        <location filename="../clientsettingsdlg.cpp" line="1211"/>
         <source>L</source>
         <translation>L</translation>
     </message>
@@ -1970,7 +1970,7 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation type="vanished">preferowany</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="505"/>
+        <location filename="../clientsettingsdlg.cpp" line="509"/>
         <source>Musician Profile</source>
         <translation>Profil muzyka</translation>
     </message>
@@ -1983,12 +1983,12 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation type="vanished">Podane tutaj informacje pojawią się przy twoim suwaku na mikserze w czasie połączenia z serwerem Jamulus-a. Taka etykieta pokaże się także u każdego uczestnika podłączonego do tego samego serwera.</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="518"/>
+        <location filename="../clientsettingsdlg.cpp" line="522"/>
         <source>Alias or name edit box</source>
         <translation>Pole edycji nazwy lub pseudonimu</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="520"/>
+        <location filename="../clientsettingsdlg.cpp" line="524"/>
         <source>Instrument picture button</source>
         <translation>Przycisk wyboru instrumentu</translation>
     </message>
@@ -1997,43 +1997,43 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation type="vanished">Przycisk wyboru flagi</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="524"/>
+        <location filename="../clientsettingsdlg.cpp" line="528"/>
         <source>City edit box</source>
         <translation>Pole edycji miasta</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="526"/>
+        <location filename="../clientsettingsdlg.cpp" line="530"/>
         <source>Skill level combo box</source>
         <translation>Lista wyboru poziomu umiejętności</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="620"/>
+        <location filename="../clientsettingsdlg.cpp" line="624"/>
         <source>Beginner</source>
         <translation>Początkujący</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="624"/>
+        <location filename="../clientsettingsdlg.cpp" line="628"/>
         <source>Intermediate</source>
         <translation>Średniozaawansowany</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="628"/>
+        <location filename="../clientsettingsdlg.cpp" line="632"/>
         <source>Expert</source>
         <translation>Ekspert</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="784"/>
-        <location filename="../clientsettingsdlg.cpp" line="788"/>
+        <location filename="../clientsettingsdlg.cpp" line="791"/>
+        <location filename="../clientsettingsdlg.cpp" line="795"/>
         <source>Size: </source>
         <translation>Rozmiar: </translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="843"/>
+        <location filename="../clientsettingsdlg.cpp" line="850"/>
         <source>Buffer Delay</source>
         <translation>Opóźnienie bufora</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlg.cpp" line="848"/>
+        <location filename="../clientsettingsdlg.cpp" line="855"/>
         <source>Buffer Delay: </source>
         <translation>Opóźnienie bufora: </translation>
     </message>
@@ -2311,34 +2311,34 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation type="vanished">Urządzenie</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="474"/>
+        <location filename="../clientsettingsdlgbase.ui" line="488"/>
         <source>Input Channel Mapping</source>
         <translation>Mapowanie kanału wejścia</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="494"/>
-        <location filename="../clientsettingsdlgbase.ui" line="557"/>
+        <location filename="../clientsettingsdlgbase.ui" line="508"/>
+        <location filename="../clientsettingsdlgbase.ui" line="571"/>
         <source>L</source>
         <translation>L</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="510"/>
-        <location filename="../clientsettingsdlgbase.ui" line="573"/>
+        <location filename="../clientsettingsdlgbase.ui" line="524"/>
+        <location filename="../clientsettingsdlgbase.ui" line="587"/>
         <source>R</source>
         <translation>P</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="537"/>
+        <location filename="../clientsettingsdlgbase.ui" line="551"/>
         <source>Output Channel Mapping</source>
         <translation>Mapowanie kanału wyjścia</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="900"/>
+        <location filename="../clientsettingsdlgbase.ui" line="914"/>
         <source>Small Network Buffers</source>
         <translation>Małe bufory sieciowe</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="670"/>
+        <location filename="../clientsettingsdlgbase.ui" line="684"/>
         <source>Buffer Delay</source>
         <translation>Opóźnienie bufora</translation>
     </message>
@@ -2348,22 +2348,22 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation>Kraj/Region</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="682"/>
+        <location filename="../clientsettingsdlgbase.ui" line="696"/>
         <source>(preferred)</source>
         <translation>(preferowane)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="695"/>
+        <location filename="../clientsettingsdlgbase.ui" line="709"/>
         <source>(default)</source>
         <translation>(domyślne)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="708"/>
+        <location filename="../clientsettingsdlgbase.ui" line="722"/>
         <source>(safe)</source>
         <translation>(bezpieczne)</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="424"/>
+        <location filename="../clientsettingsdlgbase.ui" line="438"/>
         <source>Driver Setup</source>
         <translation>Konfiguracja sterownika</translation>
     </message>
@@ -2424,61 +2424,66 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
     <message>
         <location filename="../clientsettingsdlgbase.ui" line="348"/>
         <source>Enable P2P Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Enable P2P Mode</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="366"/>
+        <location filename="../clientsettingsdlgbase.ui" line="355"/>
+        <source>Pure P2P Mode</source>
+        <translation>Pure P2P Mode</translation>
+    </message>
+    <message>
+        <location filename="../clientsettingsdlgbase.ui" line="380"/>
         <source>Audio/Network Setup</source>
         <translation>Ustawienia dźwięku/sieci</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="376"/>
+        <location filename="../clientsettingsdlgbase.ui" line="390"/>
         <source>Audio Device</source>
         <translation>Urządzenie dźwiękowe</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="738"/>
+        <location filename="../clientsettingsdlgbase.ui" line="752"/>
         <source>Jitter Buffer</source>
         <translation>Bufor odchyleń</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="750"/>
+        <location filename="../clientsettingsdlgbase.ui" line="764"/>
         <source>Auto</source>
         <translation>Automatyczny</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="759"/>
+        <location filename="../clientsettingsdlgbase.ui" line="773"/>
         <source>Local</source>
         <translation>Lokalny</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="772"/>
+        <location filename="../clientsettingsdlgbase.ui" line="786"/>
         <source>Server</source>
         <translation>Serwer</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="789"/>
-        <location filename="../clientsettingsdlgbase.ui" line="802"/>
+        <location filename="../clientsettingsdlgbase.ui" line="803"/>
+        <location filename="../clientsettingsdlgbase.ui" line="816"/>
         <source>Size</source>
         <translation>Rozmiar</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="931"/>
+        <location filename="../clientsettingsdlgbase.ui" line="945"/>
         <source>kbps</source>
         <translation>kbps</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1034"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1048"/>
         <source>Custom Directories:</source>
         <translation>Serwery zbiorcze:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1108"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1122"/>
         <source>Input Boost</source>
         <translation>Wzmocnienie wejścia</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1140"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1154"/>
         <source>Feedback Protection</source>
         <translation>Ochrona przed sprzężeniem zwrotnym</translation>
     </message>
@@ -2487,17 +2492,17 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation type="vanished">Zastosuj</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1195"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1209"/>
         <source>Input Balance</source>
         <translation>Balans wejściowy</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1206"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1220"/>
         <source>Pan</source>
         <translation>Panorama</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1289"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1303"/>
         <source>Center</source>
         <translation>Środek</translation>
     </message>
@@ -2506,12 +2511,12 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation type="vanished">Różne</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="623"/>
+        <location filename="../clientsettingsdlgbase.ui" line="637"/>
         <source>Audio Channels</source>
         <translation>Kanały audio</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="633"/>
+        <location filename="../clientsettingsdlgbase.ui" line="647"/>
         <source>Audio Quality</source>
         <translation>Jakość audio</translation>
     </message>
@@ -2520,7 +2525,7 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation type="vanished">Miara</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="993"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1007"/>
         <source>Advanced Setup</source>
         <translation>Ustawienia zaawansowane</translation>
     </message>
@@ -2529,7 +2534,7 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation type="vanished">Własny Adres Serwera Zbiorczego:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1071"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1085"/>
         <source>New Client Level</source>
         <translation>Poziom dołączającego się uczestnika</translation>
     </message>
@@ -2544,7 +2549,7 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation>Język</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="1086"/>
+        <location filename="../clientsettingsdlgbase.ui" line="1100"/>
         <source>%</source>
         <translation>%</translation>
     </message>
@@ -2553,12 +2558,12 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation type="obsolete">Własny adres serwera centralnego:</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="907"/>
+        <location filename="../clientsettingsdlgbase.ui" line="921"/>
         <source>Audio Stream Rate</source>
         <translation>Prędkość strumienia audio</translation>
     </message>
     <message>
-        <location filename="../clientsettingsdlgbase.ui" line="941"/>
+        <location filename="../clientsettingsdlgbase.ui" line="955"/>
         <source>val</source>
         <translation>wartość</translation>
     </message>
@@ -3166,7 +3171,7 @@ Twój kanał został wyciszony i włączono „Wycisz mnie”. Napraw przyczynę
         <translation type="vanished">Rapowanie</translation>
     </message>
     <message>
-        <location filename="../settings.cpp" line="294"/>
+        <location filename="../settings.cpp" line="304"/>
         <source>No Name</source>
         <translation>Brak nazwy</translation>
     </message>
