@@ -289,6 +289,12 @@ void CClientSettings::ReadSettingsFromXML ( const QDomDocument& IniXMLDocument, 
         bEnableAudioAlerts = bValue;
     }
 
+    // P2P mode
+    if ( GetFlagIniSet ( IniXMLDocument, "client", "usep2p", bValue ) )
+    {
+        bUseP2PMode = bValue;
+    }
+
     // name
     pClient->ChannelInfo.strName = FromBase64ToString (
         GetIniSetting ( IniXMLDocument, "client", "name_base64", ToBase64 ( QCoreApplication::translate ( "CMusProfDlg", "No Name" ) ) ) );
@@ -463,17 +469,17 @@ void CClientSettings::ReadSettingsFromXML ( const QDomDocument& IniXMLDocument, 
 
     // custom directories
 
-    //### TODO: BEGIN ###//
-    // compatibility to old version (< 3.6.1)
+    // ### TODO: BEGIN ###//
+    //  compatibility to old version (< 3.6.1)
     QString strDirectoryAddress = GetIniSetting ( IniXMLDocument, "client", "centralservaddr", "" );
-    //### TODO: END ###//
+    // ### TODO: END ###//
 
     for ( iIdx = 0; iIdx < MAX_NUM_SERVER_ADDR_ITEMS; iIdx++ )
     {
-        //### TODO: BEGIN ###//
-        // compatibility to old version (< 3.8.2)
+        // ### TODO: BEGIN ###//
+        //  compatibility to old version (< 3.8.2)
         strDirectoryAddress = GetIniSetting ( IniXMLDocument, "client", QString ( "centralservaddr%1" ).arg ( iIdx ), strDirectoryAddress );
-        //### TODO: END ###//
+        // ### TODO: END ###//
 
         vstrDirectoryAddress[iIdx] = GetIniSetting ( IniXMLDocument, "client", QString ( "directoryaddress%1" ).arg ( iIdx ), strDirectoryAddress );
         strDirectoryAddress        = "";
@@ -481,9 +487,9 @@ void CClientSettings::ReadSettingsFromXML ( const QDomDocument& IniXMLDocument, 
 
     // directory type
 
-    //### TODO: BEGIN ###//
-    // compatibility to old version (<3.4.7)
-    // only the case that "centralservaddr" was set in old ini must be considered
+    // ### TODO: BEGIN ###//
+    //  compatibility to old version (<3.4.7)
+    //  only the case that "centralservaddr" was set in old ini must be considered
     if ( !vstrDirectoryAddress[0].isEmpty() && GetFlagIniSet ( IniXMLDocument, "client", "defcentservaddr", bValue ) && !bValue )
     {
         eDirectoryType = AT_CUSTOM;
@@ -493,7 +499,7 @@ void CClientSettings::ReadSettingsFromXML ( const QDomDocument& IniXMLDocument, 
     {
         eDirectoryType = static_cast<EDirectoryType> ( iValue );
     }
-    //### TODO: END ###//
+    // ### TODO: END ###//
 
     else if ( GetNumericIniSet ( IniXMLDocument, "client", "directorytype", 0, static_cast<int> ( AT_CUSTOM ), iValue ) )
     {
@@ -651,6 +657,9 @@ void CClientSettings::WriteSettingsToXML ( QDomDocument& IniXMLDocument, bool is
 
     // audio alerts
     SetFlagIniSet ( IniXMLDocument, "client", "enableaudioalerts", bEnableAudioAlerts );
+
+    // P2P mode
+    SetFlagIniSet ( IniXMLDocument, "client", "usep2p", bUseP2PMode );
 
     // name
     PutIniSetting ( IniXMLDocument, "client", "name_base64", ToBase64 ( pClient->ChannelInfo.strName ) );
@@ -846,10 +855,10 @@ void CServerSettings::ReadSettingsFromXML ( const QDomDocument& IniXMLDocument, 
         // Server GUI defaults to ""
         QString directoryAddress = "";
 
-        //### TODO: BEGIN ###//
-        // compatibility to old version < 3.8.2
+        // ### TODO: BEGIN ###//
+        //  compatibility to old version < 3.8.2
         directoryAddress = GetIniSetting ( IniXMLDocument, "server", "centralservaddr", directoryAddress );
-        //### TODO: END ###//
+        // ### TODO: END ###//
 
         directoryAddress = GetIniSetting ( IniXMLDocument, "server", "directoryaddress", directoryAddress );
 
@@ -869,20 +878,20 @@ void CServerSettings::ReadSettingsFromXML ( const QDomDocument& IniXMLDocument, 
     }
     else
     {
-        //### TODO: BEGIN ###//
-        // compatibility to old version < 3.4.7
+        // ### TODO: BEGIN ###//
+        //  compatibility to old version < 3.4.7
         if ( GetFlagIniSet ( IniXMLDocument, "server", "defcentservaddr", bValue ) )
         {
             directoryType = bValue ? AT_DEFAULT : AT_CUSTOM;
         }
         else
         {
-            //### TODO: END ###//
+            // ### TODO: END ###//
 
             // if "directorytype" itself is set, use it (note "AT_NONE", "AT_DEFAULT" and "AT_CUSTOM" are min/max directory type here)
 
-            //### TODO: BEGIN ###//
-            // compatibility to old version < 3.8.2
+            // ### TODO: BEGIN ###//
+            //  compatibility to old version < 3.8.2
             if ( GetNumericIniSet ( IniXMLDocument,
                                     "server",
                                     "centservaddrtype",
@@ -892,7 +901,7 @@ void CServerSettings::ReadSettingsFromXML ( const QDomDocument& IniXMLDocument, 
             {
                 directoryType = static_cast<EDirectoryType> ( iValue );
             }
-            //### TODO: END ###//
+            // ### TODO: END ###//
 
             else
             {
@@ -908,14 +917,14 @@ void CServerSettings::ReadSettingsFromXML ( const QDomDocument& IniXMLDocument, 
             }
         }
 
-        //### TODO: BEGIN ###//
-        // compatibility to old version < 3.9.0
-        // override type to AT_NONE if servlistenabled exists and is false
+        // ### TODO: BEGIN ###//
+        //  compatibility to old version < 3.9.0
+        //  override type to AT_NONE if servlistenabled exists and is false
         if ( GetFlagIniSet ( IniXMLDocument, "server", "servlistenabled", bValue ) && !bValue )
         {
             directoryType = AT_NONE;
         }
-        //### TODO: END ###//
+        // ### TODO: END ###//
     }
 
     pServer->SetDirectoryType ( directoryType );
